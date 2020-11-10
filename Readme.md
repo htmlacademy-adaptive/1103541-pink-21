@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Надежда](https://up.htmlacademy.ru/adaptive/21/user/1103541).
-* Наставник: Мария Белогубова
+* Наставник: Мария Белогубова (https://htmlacademy.ru/profile/id87018).
 
 ---
 
