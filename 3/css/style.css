@@ -1,0 +1,245 @@
+@font-face {
+  font-family: "Open Sans";
+  font-weight: normal;
+  src: url("/fonts/opensans.woff") format("woff"), url("/fonts/opensans.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Open Sans";
+  font-weight: bold;
+  src: url("/fonts/opensansbold.woff") format("woff"), url("/fonts/opensansbold.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Open Sans";
+  font-weight: lighter;
+  src: url("/fonts/opensanslight.woff") format("woff"), url("/fonts/opensanslight.woff2") format("woff2");
+}
+.page__body {
+  font-family: "Open Sans", "Arial Black", sans-serif;
+}
+.page-header {
+  background-color: #1d2631;
+}
+.main-navigation__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.main-navigation__link {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 32px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.download {
+  background-color: #1d2631;
+  color: #ffffff;
+}
+.download__wrapper {
+  padding: 28px 0 37px 0;
+}
+.download__slogan {
+  margin: 0;
+  font-size: 24px;
+  font-weight: lighter;
+}
+.download__button-wrapper a {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 18px;
+  text-decoration: none;
+  color: #ffffff;
+}
+.download__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.download__description {
+  margin: 0;
+  font-size: 14px;
+  font-weight: lighter;
+  line-height: 14px;
+}
+.advantages__wrapper {
+  padding-top: 43px;
+}
+.advantages__text {
+  margin: 0;
+  font-size: 24px;
+  font-weight: lighter;
+  line-height: 29px;
+  color: #283645;
+}
+.advantages__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  background-color: #f2f2f2;
+}
+.advantages__item-title {
+  margin: 0;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 24px;
+}
+.advantages__item-description {
+  margin: 0;
+  font-size: 14px;
+  line-height: 24px;
+  color: #283645;
+}
+.article__wrapper {
+  padding: 54px 0 54px 0;
+}
+.article__title {
+  margin: 0;
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 36px;
+}
+.article__description {
+  margin: 0;
+  font-size: 14px;
+  line-height: 24px;
+  color: #283645;
+}
+.article__link {
+  font-size: 14px;
+  line-height: 24px;
+  color: #d22856;
+}
+.review__wrapper {
+  padding: 44px 0 55px 0;
+}
+.review__item {
+  margin: 0;
+}
+.review__author-name {
+  font-size: 18px;
+  font-weight: bold;
+  font-style: normal;
+  line-height: 30px;
+}
+.review__author-description {
+  margin: 0;
+  font-size: 14px;
+  line-height: 30px;
+}
+.review__text {
+  margin: 0;
+  font-size: 14px;
+  line-height: 30px;
+  color: #283645;
+}
+.price {
+  background-color: #e5e5e5;
+}
+.price__table-wrapper {
+  padding: 82px 0 50px 0;
+}
+.price__caption {
+  background-color: #283645;
+}
+.price__caption-title {
+  margin: 0;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 30px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+.price__caption-text {
+  margin: 0;
+  font-size: 18px;
+  font-weight: lighter;
+  line-height: 30px;
+  color: #ffffff;
+}
+.price__option {
+  background-color: #ffffff;
+}
+.price__option-text {
+  margin: 0;
+  font-size: 14px;
+  line-height: 30px;
+  color: #283645;
+}
+.contacts {
+  background-color: #ffffff;
+}
+.contacts__wrapper {
+  padding: 47px 0 0 0;
+}
+.contacts__text {
+  margin: 0;
+  font-size: 24px;
+  font-weight: lighter;
+  line-height: 29px;
+  color: #283645;
+}
+.contacts__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.contacts__item-headline {
+  margin: 0;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 24px;
+  color: #283645;
+}
+.contacts__phone {
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: lighter;
+  line-height: 33px;
+  color: #d22856;
+}
+.contacts__email {
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: lighter;
+  line-height: 33px;
+  color: #d22856;
+}
+.contacts__item-text {
+  margin: 0;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: lighter;
+  line-height: 33px;
+  color: #d22856;
+}
+.page-footer {
+  background-color: #ffffff;
+}
+.social-contacts__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.coopyrite__text {
+  margin: 0;
+  font-size: 14px;
+  line-height: 18px;
+  color: #283645;
+}
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  lip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/*# sourceMappingURL=style.css.map */
