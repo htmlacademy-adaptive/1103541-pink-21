@@ -24,6 +24,7 @@
 
   font-size: 24px;
   font-weight: lighter;
+  z-index: 1;
 
   @media (min-width: @tablet-width) {
     font-size: 40px;
@@ -36,12 +37,21 @@
   }
 }
 
+.download__image {
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    right: 0;
+    z-index: 0;
+  }
+}
+
 .download__button-wrapper a {
   font-size: 18px;
   font-weight: bold;
   line-height: 18px;
   text-decoration: none;
   color: #ffffff;
+  z-index: 1;
 
   @media (min-width: @desktop-width) {
     font-size: 21px;
@@ -51,6 +61,7 @@
 .download__list {
   margin: 0;
   padding: 0;
+  z-index: 1;
 
   list-style: none;
 }
@@ -60,6 +71,7 @@
   font-size: 14px;
   font-weight: lighter;
   line-height: 24px;
+  z-index: 1;
 
   @media (min-width: @tablet-width) {
     font-size: 18px;
