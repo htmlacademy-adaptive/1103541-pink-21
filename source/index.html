@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
     <link rel="stylesheet" href="css/style.css">
@@ -9,7 +10,7 @@
     <header class="page-header">
       <div class="page-header__logo">
         <a class="logo" href="">
-          <svg></svg>
+          <svg width="74" height="23"></svg>
         </a>
       </div>
       <nav class="main-navigation">
@@ -36,7 +37,7 @@
         <h2 class="visually-hidden">Где можно скачать приложение</h2>
         <div class="download__wrapper">
           <p class="download__slogan">Взгляните на жизнь иначе!</p>
-          <img src="https://via.placeholder.com/100x200" width="" height="" alt="Рука с телефоном, на котором открыто приложение pink">
+          <img class="download__image" src="https://via.placeholder.com/100x200" width="300" height="286" alt="Рука с телефоном, на котором открыто приложение pink">
           <div class="download__button-wrapper">
             <a сlass="download__button" href="#">Скачать приложение</a>
           </div>
@@ -90,21 +91,24 @@
         <div class="review__wrapper slider">
           <h2 class="visually-hidden">Отзывы</h2>
           <div class="review__list slider__list">
-            <blockquote class="review__item slider__item">
+            <blockquote class="review__item review__item--first slider__item">
+              <span class="review__icon-quotes"></span>
               <div class="review__author-info">
                 <cite class="review__author-name">Николай Петров</cite>
                 <p class="review__author-description review__author-description--bottom">25 лет, водитель трамвая</p>
               </div>
               <p class="review__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
             </blockquote>
-            <blockquote class="review__item slider__item">
+            <blockquote class="review__item review__item--second slider__item">
+              <span class="review__icon-quotes"></span>
               <div class="review__author-info">
                 <cite class="review__author-name">Николай Петров</cite>
                 <p class="review__author-description review__author-description--bottom">25 лет, водитель трамвая</p>
               </div>
               <p class="review__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
             </blockquote>
-            <blockquote class="review__item slider__item">
+            <blockquote class="review__item review__item--third slider__item">
+              <span class="review__icon-quotes"></span>
               <div class="review__author-info">
                 <cite class="review__author-name">Николай Петров</cite>
                 <p class="review__author-description review__author-description--bottom">25 лет, водитель трамвая</p>
@@ -126,7 +130,7 @@
           <div class="price__table-wrapper slider">
             <table class="price__table">
               <tr class="price__caption slider__list">
-                <th>
+                <th class="price__caption-item price__caption-item--none"></th>
                   <span></span>
                 </th>
                 <th class="price__caption-item slider__item">
@@ -143,45 +147,54 @@
                 </th>
               </tr>
               <tr class="price__option">
-                <td class="price__option-item">
+                <td class="price__option-item price__option-item--not-mobile">
                   <p class="price__option-text">Розовый</p>
                 </td>
                 <td class="price__option-item">
-                  <span class="price__option-checkmark">Галочка</span>
+                  <p class="price__option-text price__option-text--mobile">Розовый</p>
+                  <span class="price__option-checkmark"></span>
                 </td>
                 <td class="price__option-item">
-                  <span class="price__option-checkmark">Галочка</span>
+                  <p class="price__option-text price__option-text--mobile">Розовый</p>
+                  <span class="price__option-checkmark"></span>
                 </td>
                 <td class="price__option-item">
-                  <span class="price__option-checkmark">Галочка</span>
+                  <p class="price__option-text price__option-text--mobile">Розовый</p>
+                  <span class="price__option-checkmark"></span>
                 </td>
               </tr>
               <tr class="price__option">
-                <td class="price__option-item">
+                <td class="price__option-item price__option-item--not-mobile">
                   <p class="price__option-text">Смайлики</p>
                 </td>
                 <td class="price__option-item">
-                  <span class="price__option-cross">Крестик</span>
+                  <p class="price__option-text price__option-text--mobile">Смайлики</p>
+                  <span class="price__option-cross"></span>
                 </td>
                 <td class="price__option-item">
-                  <span class="price__option-checkmark">Галочка</span>
+                  <p class="price__option-text price__option-text--mobile">Смайлики</p>
+                  <span class="price__option-checkmark"></span>
                 </td>
                 <td class="price__option-item">
-                  <span class="price__option-checkmark">Галочка</span>
+                  <p class="price__option-text price__option-text--mobile">Смайлики</p>
+                  <span class="price__option-checkmark"></span>
                 </td>
               </tr>
               <tr class="price__option">
-                <td class="price__option-item">
+                <td class="price__option-item price__option-item--not-mobile">
                   <p class="price__option-text">Комментарии</p>
                 </td>
                 <td class="price__option-item">
-                  <span class="price__option-cross">Крестик</span>
+                  <p class="price__option-text price__option-text--mobile">Комментарии</p>
+                  <span class="price__option-cross"></span>
                 </td>
                 <td class="price__option-item">
-                  <span class="price__option-cross">Крестик</span>
+                  <p class="price__option-text price__option-text--mobile">Комментарии</p>
+                  <span class="price__option-cross"></span>
                 </td>
                 <td class="price__option-item">
-                  <span class="price__option-checkmark">Галочка</span>
+                  <p class="price__option-text price__option-text--mobile">Комментарии</p>
+                  <span class="price__option-checkmark"></span>
                 </td>
               </tr>
             </table>
@@ -211,15 +224,15 @@
               <p class="contacts__item-text">ул. Большая Конюшенная, 19/8</p>
             </li>
           </ul>
-        <img src="https://via.placeholder.com/200x100" width="" height="" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
         </div>
+        <img src="https://via.placeholder.com/320x200" width="" height="" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
       </section>
     </main>
     <footer class="page-footer">
       <div class="page-footer__wrapper">
         <div class="page-footer__logo">
           <a class="logo logo--footer" href="#">
-            <svg></svg>
+            <svg width="147" height="40"></svg>
           </a>
         </div>
         <ul class="social-contacts__list">
@@ -235,7 +248,9 @@
         </ul>
         <div class="coopyrite">
           <p class="coopyrite__text">Разработано</p>
-          <a class="coopyrite__link" href="https://htmlacademy.ru/intensive/adaptive"><svg></svg></a>
+          <a class="coopyrite__link" href="https://htmlacademy.ru/intensive/adaptive">
+            <svg width="27" height="34"></svg>
+          </a>
         </div>
       </div>
     </footer>
