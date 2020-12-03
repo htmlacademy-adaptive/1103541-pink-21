@@ -1,23 +1,34 @@
 .page-header {
-  padding: 0 20px;
-  min-height: 325px;
-  display: flex;
-  flex-direction: column;
-
   background-color: #1d2631;
 
-  @media (min-width: @tablet-width) {
-    min-height: 364px;
-  }
-
   @media (min-width: @desktop-width) {
-    min-height: 110px;
-    padding: 0 130px;
+    padding: 20px 130px 0 130px;
+    display: flex;
     flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.page-header--nav-opened {
+  @media (max-width: @mobile-tablet-width-only) {
+    background-color: #283645;
   }
 }
 
 .page-header__logo {
-  width: 145px;
-  height: 40px;
+  width: 74px;
+  height: 23px;
+  padding: 23px 20px;
+
+  @media (min-width: @tablet-width) {
+    width: 145px;
+    height: 40px;
+    padding: 20px 20px 30px 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 145px;
+    height: 40px;
+    padding: 20px 0 0 20px;
+  }
 }

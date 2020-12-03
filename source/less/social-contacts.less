@@ -1,8 +1,33 @@
 .social-contacts__list {
   margin: 0;
-  padding: 0;
+  padding: 30px 0 30px 0;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
 
   list-style: none;
+}
+
+.social-contacts__item {
+  margin-right: 5px;
+}
+
+.social-contacts__link {
+  display: block;
+  box-sizing: border-box;
+  width: 55px;
+  height: 55px;
+  border: 3px solid #e5e5e5;
+  border-radius: 50%;
+  padding-top: 15px;
+  text-align: center;
+
+  &:hover,
+  &:focus {
+    border-color: #283645;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }

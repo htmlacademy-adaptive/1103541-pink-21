@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
     <header class="page-header">
@@ -33,7 +34,7 @@
       <h1 class="page-main__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
       <section class="сompetition">
         <div class="competition__wrapper">
-          <p class="competition__description">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:</p>
+          <p class="competition__description">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!<span class="competition__description--not-mobile"> Пожалуйста, заполните форму ниже:</span></p>
           <form class="participant-form" action="https://echo.htmlacademy.ru" method="get">
             <fieldset class="participant-form__fieldset personal-info">
               <legend class="visually-hidden">Персональные данные</legend>
@@ -103,7 +104,7 @@
               <textarea class="input-text" name="emotion" id="emotion" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
             </fieldset>
             <button class="competition__button button">Отправить форму</button>
-            <p class="participant-form__note">*-обязательные поля</p>
+            <p class="participant-form__note"><span class="participant-form__note participant-form__note--star">*</span>-обязательные поля</p>
           </form>
         </div>
       </section>
