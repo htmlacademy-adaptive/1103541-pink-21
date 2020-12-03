@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Пинк</title>
+    <link rel="stylesheet" href="css/style.css">
+    <base href="https://htmlacademy-adaptive.github.io/1103541-pink-21/6/">
+</head>
+  <body class="page__body">
+    <header class="page-header">
+      <div class="page-header__logo">
+        <a class="logo" href="index.html">
+          <svg></svg>
+        </a>
+      </div>
+      <nav class="main-navigation">
+        <button class="main-navigation__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <ul class="main-navigation__list">
+          <li class="main-navigation__item">
+            <a class="main-navigation__link" href="index.html">Главная</a>
+          </li>
+          <li class="main-navigation__item">
+            <a class="main-navigation__link" href="catalog.html">Фотографии</a>
+          </li>
+          <li class="main-navigation__item">
+            <a class="main-navigation__link main-navigation__link--activ" href="">Конкурс</a>
+          </li>
+          <li class="main-navigation__item">
+            <a class="main-navigation__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="page-main">
+      <h1 class="page-main__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
+      <section class="сompetition">
+        <div class="competition__wrapper">
+          <p class="competition__description">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!<span class="competition__description--not-mobile"> Пожалуйста, заполните форму ниже:</span></p>
+          <form class="participant-form" action="https://echo.htmlacademy.ru" method="get">
+            <fieldset class="participant-form__fieldset personal-info">
+              <legend class="visually-hidden">Персональные данные</legend>
+              <label class="personal-info__item label-text" for="surname">Фамилия:
+                <input class="input-text" type="text" name="participant-surname" id="surname" placeholder="Укажите фамилию *" required>
+              </label>
+              <label class="personal-info__item label-text" for="name">Имя:
+                <input class="input-text" type="text" name="participant-name" id="name" placeholder="Введите ваше имя *" required>
+              </label>
+              <label class="personal-info__item label-text" for="patronymic">Отчество:
+                <input class="input-text" type="text" name="participant-patronymic" id="patronymic" placeholder="Ну и отчество тоже">
+              </label>
+            </fieldset>
+            <fieldset class="participant-form__fieldset personal-result">
+              <legend class="participant-form__fieldset-subtitle">Ваши безбашенные достижения в путешествии</legend>
+              <label class="personal-result__item checkbox">
+                <input class="checkbox__input" type="checkbox" name="foto-with-shark" checked>
+                Сделать селфи с акулой
+              </label>
+              <label class="personal-result__item checkbox">
+                <input class="checkbox__input" type="checkbox" name="burned-on-the-beach" checked>
+                Обгорел на пляже
+              </label>
+              <label class="personal-result__item checkbox">
+                <input class="checkbox__input" type="checkbox" name="saw-chuck-noris">
+                Видел Чака Норриса
+              </label>
+              <label class="personal-result__item checkbox">
+                <input class="checkbox__input" type="checkbox" name="buy-souvenirs">
+                Накупил сувенирова
+              </label>
+              <label class="personal-result__item checkbox">
+                <input class="checkbox__input" type="checkbox" name="held-tower">
+                Удержал башню
+              </label>
+              <label class="personal-result__item checkbox">
+                <input class="checkbox__input"  type="checkbox" name="destroyed-hotel">
+                Разгромил отель
+              </label>
+            </fieldset>
+            <fieldset class="participant-form__fieldset personal-info">
+              <legend class="participant-form__fieldset-subtitle">Контактная информация</legend>
+              <label class="personal-info__item label-text" for="phone">Номер телефона:
+                <input class="input-text" type="tel" name="phone" id="phone" placeholder="Номер, пожалуйста">
+              </label>
+              <label class="personal-info__item label-text" for="email">Адрес почты:
+                <input class="input-text" type="email" name="mail" id="mail" placeholder="Введите почту*" required>
+              </label>
+            </fieldset >
+            <fieldset class="participant-form__fieldset application">
+              <legend class="participant-form__fieldset-subtitle">С каким приложением путешествовали?</legend>
+              <label class="application__item radiobutton">
+                <input class="radiobutton__input" type="radio" name="application" value="Pink для iOS" checked>
+                Pink для iOS
+              </label>
+              <label class="application__item radiobutton">
+                <input class="radiobutton__input"  type="radio" name="application" value="Pink на Android">
+                Pink на Android
+              </label>
+              <label class="application__item radiobutton">
+                <input class="radiobutton__input" type="radio" name="application" value="Windows Phone">
+                Windows Phone
+              </label>
+            </fieldset>
+            <fieldset class="participant-form__fieldset emotion">
+              <legend class="participant-form__fieldset-subtitle">Опишите свои эмоции</legend>
+              <textarea class="input-text" name="emotion" id="emotion" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+            </fieldset>
+            <button class="competition__button button">Отправить форму</button>
+            <p class="participant-form__note"><span class="participant-form__note participant-form__note--star">*</span>-обязательные поля</p>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <div class="page-footer__wrapper">
+        <div class="page-footer__logo">
+          <a class="logo logo--footer" href="index.html">
+            <svg></svg>
+          </a>
+        </div>
+        <ul class="social-contacts__list">
+          <li class="social-contacts__item">
+            <a class="social-contacts__link social-contacts__link--twitter" href="#">Твиттер</a>
+          </li>
+          <li class="social-contacts__item">
+            <a class="social-contacts__link social-contacts__link--facebook" href="">Facebook</a>
+          </li>
+          <li class="social-contacts__item">
+            <a class="social-contacts__link social-contacts__link--youtube" href="">Youtube</a>
+          </li>
+        </ul>
+        <div class="coopyrite">
+          <p class="coopyrite__text">Разработано</p>
+          <a class="coopyrite__link" href="https://htmlacademy.ru/intensive/adaptive"><svg></svg></a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
