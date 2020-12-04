@@ -1,20 +1,24 @@
 .price {
   background-color: #f2f2f2;
+
+  @media (min-width: @tablet-width) {
+    padding-right: 20px;
+  }
 }
 
 .price__table-wrapper {
   min-height: 390px;
-  padding: 50px 0 0 0;
+  padding: 77px 0 0 0;
   overflow: hidden;
 
   @media (min-width: @tablet-width) {
     min-height: 290px;
-    padding: 50px 20px 0 20px;
+    padding-top: 45px;
   }
 
   @media (min-width: @desktop-width) {
     min-height: 316px;
-    padding: 70px 130px 0 130px;
+    padding: 65px 130px 60px 110px;
   }
 }
 
@@ -24,8 +28,9 @@
 
   @media (min-width: @tablet-width) {
     position: static;
-    min-width: 617px;
-    margin: 0 auto;
+    min-width: 500px;
+    padding: 0;
+    margin: 0 20px 0 20px;
   }
 
   @media (min-width: @desktop-width) {
@@ -43,8 +48,13 @@
   padding: 15px 0 25px 0;
 
   @media (min-width: @tablet-width) {
-    min-width: 155px;
+    min-width: 145px;
     padding: 10px 0 10px 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-width: 150px;
+    padding: 15px 0 20px 0;
   }
 }
 
@@ -75,6 +85,10 @@
   font-weight: lighter;
   line-height: 30px;
   color: #ffffff;
+
+  @media (min-width: @desktop-width) {
+    font-size: 24px;
+  }
 }
 
 .price__option {
@@ -82,10 +96,14 @@
 }
 
 .price__option-item {
-  padding: 15px;
+  padding: 10px 10px 20px 20px;
 
   @media (min-width: @tablet-width) {
-    padding: 7px;
+    padding: 7px 10px 7px 10px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 15px 20px 15px 20px;
   }
 }
 
@@ -103,6 +121,10 @@
   font-size: 14px;
   line-height: 30px;
   color: #283645;
+
+  @media (min-width: @desktop-width) {
+    font-size: 18px;
+  }
 }
 
 .price__option-text--mobile {
@@ -166,7 +188,7 @@
 }
 
 .price__toggles {
-  margin: 40px 0 30px 0;
+  margin: 30px auto 30px auto;
 
   @media (min-width: @tablet-width) {
     display: none;
