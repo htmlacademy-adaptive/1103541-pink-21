@@ -1,7 +1,7 @@
 .review__wrapper {
   position: relative;
   min-height: 325px;
-  padding: 45px 20px 0 20px;
+  padding: 49px 20px 0 20px;
 
   &::before {
     position: absolute;
@@ -14,7 +14,7 @@
     clip-path: polygon(100% 0%, 100% 100%, 0% 100%, 0% 80%);
 
     @media (min-width: @tablet-width) {
-      height: 45px;
+      height: 55px;
     }
 
     @media (min-width: @desktop-width) {
@@ -25,12 +25,12 @@
 
   @media (min-width: @tablet-width) {
     min-height: 300px;
-    padding: 65px 20px 0 20px;
+    padding: 68px 20px 0 20px;
   }
 
   @media (min-width: @desktop-width) {
     min-height: 440px;
-    padding: 65px 130px 0 130px;
+    padding: 60px 130px 0 130px;
   }
 }
 
@@ -70,11 +70,12 @@
 
   @media (min-width: @tablet-width) {
     display: block;
-    padding: 40px 0 5px 0;
+    padding: 35px 0 7px 0;
     font-size: 20px;
   }
 
   @media (min-width: @desktop-width) {
+    padding: 35px 0 10px 0;
     font-size: 24px;
   }
 }
@@ -97,7 +98,7 @@
 
 .review__text {
   margin: 0;
-  padding: 13px 5px 5px 5px;
+  padding: 15px 5px 5px 5px;
 
   font-size: 14px;
   line-height: 30px;
@@ -131,7 +132,11 @@
 }
 
 .review .review__toggles {
-  margin: 45px auto 0 auto;
+  margin: 25px auto 0 auto;
+
+  @media (min-width: @tablet-width) {
+    margin: 45px auto 0 auto;
+  }
 
   @media (min-width: @desktop-width) {
     display: none;

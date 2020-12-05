@@ -4,13 +4,13 @@
 
 .contacts__wrapper {
   min-height: 410px;
-  padding: 30px 0 0 0;
+  padding: 40px 0 0 0;
   display: flex;
   flex-direction: column;
 
   @media (min-width: @tablet-width) {
     min-height: 405px;
-    padding: 47px 0 0 0;
+    padding: 42px 0 0 0;
   }
 
   @media (min-width: @desktop-width) {
@@ -46,15 +46,15 @@
   list-style: none;
 
   @media (min-width: @tablet-width) {
-    padding: 27px 20px 0 20px;
+    padding: 0 20px 0 20px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
   }
 
   @media (min-width: @desktop-width) {
-    padding: 40px 130px 0 130px;
+    padding: 0 130px 20px 130px;
   }
 }
 
@@ -62,29 +62,41 @@
   padding-bottom: 20px;
 
   @media (min-width: @tablet-width) {
-    padding-bottom: 35px;
-  }
-
-  @media (min-width: @desktop-width) {
-    padding-bottom: 20px;
+    padding: 32px 0 0 0;
+    flex-grow: 1;
   }
 }
 
 .contacts__item:first-child {
+  @media (min-width: @tablet-width) {
+    padding: 32px 0 0 0;
+  }
+
   @media (min-width: @desktop-width) {
     order: 1;
+    padding: 40px 0 0 0;
   }
 }
 
 .contacts__item:nth-child(2) {
+  @media (min-width: @tablet-width) {
+    padding: 32px 0 0 0;
+  }
+
   @media (min-width: @desktop-width) {
     order: 3;
+    padding: 40px 0 0 0;
   }
 }
 
 .contacts__item:nth-child(3) {
+  @media (min-width: @tablet-width) {
+    padding: 43px 0 0 0;
+  }
+
   @media (min-width: @desktop-width) {
     order: 2;
+    padding: 40px 0 0 0;
   }
 }
 
@@ -93,16 +105,13 @@
 
   font-size: 18px;
   font-weight: bold;
-  line-height: 24px;
+  line-height: 23px;
   color: #283645;
   text-align: center;
 
-  @media (min-width: @tablet-width) {
-    padding-bottom: 8px;
-  }
 
   @media (min-width: @desktop-width) {
-    padding-bottom: 20px;
+    padding-bottom: 15px;
   }
 }
 
@@ -115,10 +124,15 @@
   font-weight: lighter;
   line-height: 33px;
   color: #d22856;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 5px;
+  }
 }
 
 .contacts__email {
   display: block;
+
 
   text-decoration: none;
   text-align: center;
@@ -126,6 +140,10 @@
   font-weight: lighter;
   line-height: 33px;
   color: #d22856;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 5px;
+  }
 
   &:hover,
   &:focus {
@@ -148,6 +166,10 @@
   font-weight: lighter;
   line-height: 33px;
   color: #d22856;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 5px;
+  }
 }
 
 .contacts__map-wrapper {
@@ -174,7 +196,7 @@
   z-index: 1;
 
   @media (min-width: @tablet-width) {
-    height: 365px;
+    height: 395px;
   }
 
   @media (min-width: @desktop-width) {

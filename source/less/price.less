@@ -1,24 +1,21 @@
 .price {
   background-color: #f2f2f2;
-
-  @media (min-width: @tablet-width) {
-    padding-right: 20px;
-  }
 }
 
 .price__table-wrapper {
-  min-height: 390px;
+  min-height: 383px;
   padding: 77px 0 0 0;
   overflow: hidden;
 
   @media (min-width: @tablet-width) {
-    min-height: 290px;
-    padding-top: 45px;
+    min-height: 288px;
+    padding: 45px 20px 0 20px;
+    margin: 0 auto;
   }
 
   @media (min-width: @desktop-width) {
     min-height: 316px;
-    padding: 65px 130px 60px 110px;
+    padding: 65px 130px 60px 130px;
   }
 }
 
@@ -28,33 +25,30 @@
 
   @media (min-width: @tablet-width) {
     position: static;
-    min-width: 500px;
-    padding: 0;
-    margin: 0 20px 0 20px;
-  }
-
-  @media (min-width: @desktop-width) {
-    min-width: 940px;
+    width: 100%;
+    border-collapse: collapse;
   }
 }
 
 .price__caption {
   background-color: #283645;
+  padding-right: 20px;
 }
 
 .price__caption-item {
   box-sizing: border-box;
-  min-width: 280px;
-  padding: 15px 0 25px 0;
+  min-width: 278px;
+  padding: 15px 0 33px 0;
 
   @media (min-width: @tablet-width) {
     min-width: 145px;
-    padding: 10px 0 10px 0;
+    padding: 13px 0 10px 0;
+    border-right: 2px solid #f2f2f2;
   }
 
   @media (min-width: @desktop-width) {
-    min-width: 150px;
-    padding: 15px 0 20px 0;
+    min-width: 182px;
+    padding: 15px 0 25px 0;
   }
 }
 
@@ -76,6 +70,10 @@
   line-height: 30px;
   color: #ffffff;
   text-transform: uppercase;
+
+  @media (min-width: @desktop-width) {
+    font-size: 18px;
+  }
 }
 
 .price__caption-text {
@@ -83,10 +81,11 @@
 
   font-size: 18px;
   font-weight: lighter;
-  line-height: 30px;
+  line-height: 22px;
   color: #ffffff;
 
   @media (min-width: @desktop-width) {
+    padding-top: 5px;
     font-size: 24px;
   }
 }
@@ -96,14 +95,15 @@
 }
 
 .price__option-item {
-  padding: 10px 10px 20px 20px;
+  padding: 12px 10px 16px 20px;
 
   @media (min-width: @tablet-width) {
-    padding: 7px 10px 7px 10px;
+    padding: 10px 0 5px 15px;
+    border: 2px solid #e5e5e5;
   }
 
   @media (min-width: @desktop-width) {
-    padding: 15px 20px 15px 20px;
+    padding: 13px 20px 15px 20px;
   }
 }
 
@@ -112,6 +112,8 @@
 
   @media (min-width: @tablet-width) {
     display: table-cell;
+    box-sizing: border-box;
+    min-width: 150px;
   }
 }
 
@@ -143,6 +145,7 @@
   height: 30px;
   background-image: url("../img/price_icon_checkmark.png");
   background-repeat: no-repeat;
+  background-position: 50% 50%;
 
   @media (min-width: @tablet-width) {
     display: none;
@@ -154,11 +157,14 @@
     display: block;
     width: 40px;
     height: 30px;
-    margin: 0 auto;
-    padding-left: 100px;
+    margin-left: 40px;
     background-image: url("../img/price_icon_checkmark.png");
     background-repeat: no-repeat;
     background-position: 50% 50%;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: auto auto;
   }
 }
 
@@ -168,6 +174,7 @@
   height: 30px;
   background-image: url("../img/price_icon_cros.svg");
   background-repeat: no-repeat;
+  background-position: 50% 50%;
 
   @media (min-width: @tablet-width) {
     display: none;
@@ -179,16 +186,19 @@
     display: block;
     width: 40px;
     height: 30px;
-    margin: 0 auto;
-    padding-left: 100px;
+    margin-left: 40px;
     background-image: url("../img/price_icon_cros.svg");
     background-repeat: no-repeat;
     background-position: 50% 50%;
   }
+
+  @media (min-width: @desktop-width) {
+    margin: auto auto;
+  }
 }
 
 .price__toggles {
-  margin: 30px auto 30px auto;
+  margin: 40px auto 30px auto;
 
   @media (min-width: @tablet-width) {
     display: none;
