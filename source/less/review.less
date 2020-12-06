@@ -1,20 +1,55 @@
 .review__wrapper {
-  min-height: 366px;
-  padding: 44px 20px 55px 20px;
+  position: relative;
+  min-height: 325px;
+  padding: 49px 20px 0 20px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 25px;
+    background-color: #f2f2f2;
+    clip-path: polygon(100% 0%, 100% 100%, 0% 100%, 0% 80%);
+
+    @media (min-width: @tablet-width) {
+      height: 55px;
+    }
+
+    @media (min-width: @desktop-width) {
+      height: 90px;
+      clip-path: polygon(100% 0%, 100% 100%, 0% 100%);
+    }
+  }
+
+  @media (min-width: @tablet-width) {
+    min-height: 300px;
+    padding: 68px 20px 0 20px;
+  }
 
   @media (min-width: @desktop-width) {
-    min-height: 507px;
-    padding: 44px 130px 55px 130px;
+    min-height: 440px;
+    padding: 60px 130px 0 130px;
   }
 }
 
 .review__item {
   margin: 0;
+
   display: flex;
   flex-direction: column;
+  align-items: center;
 
   @media (min-width: @tablet-width) {
+    width: 100%;
     flex-direction: column-reverse;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 75%;
+    margin: 0 auto;
+    padding-top: 126px;
   }
 }
 
@@ -31,13 +66,17 @@
   font-weight: bold;
   font-style: normal;
   line-height: 30px;
+  text-align: center;
 
   @media (min-width: @tablet-width) {
-    font-size: 20;
+    display: block;
+    padding: 35px 0 7px 0;
+    font-size: 20px;
   }
 
   @media (min-width: @desktop-width) {
-    font-size: 24;
+    padding: 35px 0 10px 0;
+    font-size: 24px;
   }
 }
 
@@ -49,7 +88,7 @@
     margin: 0;
 
     font-size: 14px;
-    line-height: 30px;
+    line-height: 14px;
   }
 
   @media (min-width: @desktop-width) {
@@ -59,12 +98,47 @@
 
 .review__text {
   margin: 0;
+  padding: 15px 5px 5px 5px;
 
   font-size: 14px;
   line-height: 30px;
   color: #283645;
+  text-align: center;
 
   @media (min-width: @tablet-width) {
     font-size: 18px;
+    padding: 0;
+  }
+}
+
+.reviews__prev,
+.reviews__next {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: block;
+    position: absolute;
+  }
+}
+
+.reviews__prev {
+  top: 40%;
+  left: 10%;
+}
+
+.reviews__next {
+  top: 40%;
+  right: 10%;
+}
+
+.review .review__toggles {
+  margin: 25px auto 0 auto;
+
+  @media (min-width: @tablet-width) {
+    margin: 45px auto 0 auto;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: none;
   }
 }

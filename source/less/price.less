@@ -1,42 +1,54 @@
 .price {
-  background-color: #e5e5e5;
+  background-color: #f2f2f2;
 }
 
 .price__table-wrapper {
-  min-height: 455px;
-  padding: 82px 0 50px 0;
+  min-height: 383px;
+  padding: 77px 0 0 0;
   overflow: hidden;
 
   @media (min-width: @tablet-width) {
-    min-height: 348px;
-    padding: 82px 20px 50px 20px;
+    min-height: 288px;
+    padding: 45px 20px 0 20px;
+    margin: 0 auto;
   }
 
   @media (min-width: @desktop-width) {
-    min-height: 436px;
-    padding: 82px 130px 50px 130px;
+    min-height: 316px;
+    padding: 65px 130px 60px 130px;
   }
 }
 
 .price__table {
-  @media (min-width: @tablet-width) {
-    min-width: 617px;
-  }
+  position: relative;
+  right: 262px;
 
-  @media (min-width: @desktop-width) {
-    min-width: 940px;
+  @media (min-width: @tablet-width) {
+    position: static;
+    width: 100%;
+    border-collapse: collapse;
   }
 }
 
 .price__caption {
   background-color: #283645;
+  padding-right: 20px;
 }
 
 .price__caption-item {
-  min-width: 280px;
+  box-sizing: border-box;
+  min-width: 278px;
+  padding: 15px 0 33px 0;
 
   @media (min-width: @tablet-width) {
-    min-width: 155px;
+    min-width: 145px;
+    padding: 13px 0 10px 0;
+    border-right: 2px solid #f2f2f2;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-width: 182px;
+    padding: 15px 0 25px 0;
   }
 }
 
@@ -45,7 +57,8 @@
 
   @media (min-width: @tablet-width) {
     display: table-cell;
-    background-color: #e5e5e5;
+    background-color: #f2f2f2;
+    border: 0;
   }
 }
 
@@ -57,6 +70,10 @@
   line-height: 30px;
   color: #ffffff;
   text-transform: uppercase;
+
+  @media (min-width: @desktop-width) {
+    font-size: 18px;
+  }
 }
 
 .price__caption-text {
@@ -64,12 +81,30 @@
 
   font-size: 18px;
   font-weight: lighter;
-  line-height: 30px;
+  line-height: 22px;
   color: #ffffff;
+
+  @media (min-width: @desktop-width) {
+    padding-top: 5px;
+    font-size: 24px;
+  }
 }
 
 .price__option {
   background-color: #ffffff;
+}
+
+.price__option-item {
+  padding: 12px 10px 16px 20px;
+
+  @media (min-width: @tablet-width) {
+    padding: 10px 0 5px 15px;
+    border: 2px solid #e5e5e5;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 13px 20px 15px 20px;
+  }
 }
 
 .price__option-item--not-mobile {
@@ -77,6 +112,8 @@
 
   @media (min-width: @tablet-width) {
     display: table-cell;
+    box-sizing: border-box;
+    min-width: 150px;
   }
 }
 
@@ -86,9 +123,83 @@
   font-size: 14px;
   line-height: 30px;
   color: #283645;
+
+  @media (min-width: @desktop-width) {
+    font-size: 18px;
+  }
 }
 
 .price__option-text--mobile {
+  display: flex;
+  justify-content: space-between;
+  text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
+.price__option-checkmark--mobile {
+  display: block;
+  width: 40px;
+  height: 30px;
+  background-image: url("../img/price_icon_checkmark.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
+.price__option-checkmark {
+  @media (min-width: @tablet-width) {
+    display: block;
+    width: 40px;
+    height: 30px;
+    margin-left: 40px;
+    background-image: url("../img/price_icon_checkmark.png");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: auto auto;
+  }
+}
+
+.price__option-cross--mobile {
+  display: block;
+  width: 40px;
+  height: 30px;
+  background-image: url("../img/price_icon_cros.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
+.price__option-cross {
+  @media (min-width: @tablet-width) {
+    display: block;
+    width: 40px;
+    height: 30px;
+    margin-left: 40px;
+    background-image: url("../img/price_icon_cros.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: auto auto;
+  }
+}
+
+.price__toggles {
+  margin: 40px auto 30px auto;
+
   @media (min-width: @tablet-width) {
     display: none;
   }
