@@ -1,3 +1,7 @@
+.review {
+  background-color: #ffffff;
+}
+
 .review__wrapper {
   position: relative;
   min-height: 325px;
@@ -34,6 +38,13 @@
   }
 }
 
+.review__list {
+  @media (min-width: @desktop-width) {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
+
 .review__item {
   margin: 0;
 
@@ -50,6 +61,9 @@
     width: 75%;
     margin: 0 auto;
     padding-top: 126px;
+    background-image: url("../img/reviews_quotes.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 20px;
   }
 }
 

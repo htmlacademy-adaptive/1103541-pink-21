@@ -1,0 +1,35 @@
+.logo__glasses {
+  display: none;
+}
+
+.logo__glasses--mobile {
+  display: block;
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
+
+.logo__glasses--tablet {
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
+
+.logo__glasses--desktop {
+  @media (min-width: @desktop-width) {
+    display: block;
+  }
+}
+
+.logo__stars {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: block;
+  }
+}

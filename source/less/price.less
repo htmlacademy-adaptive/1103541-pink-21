@@ -14,6 +14,7 @@
   }
 
   @media (min-width: @desktop-width) {
+    max-width: 1200px;
     min-height: 316px;
     padding: 65px 130px 60px 130px;
   }
@@ -61,6 +62,22 @@
     border: 0;
   }
 }
+
+.price__caption-item--hit {
+  background-image: url("../img/price_hit_mobile.svg");
+  background-repeat: no-repeat;
+  background-position: -5px 0;
+
+  @media (min-width: @tablet-width) {
+    background-image: url("../img/price_hit_tablet.svg");
+  }
+
+  @media (min-width: @desktop-width) {
+    background-image: url("../img/price_hit_desktop.svg");
+    background-position: 0 0;
+  }
+}
+
 
 .price__caption-title {
   margin: 0;
@@ -143,7 +160,7 @@
   display: block;
   width: 40px;
   height: 30px;
-  background-image: url("../img/price_icon_checkmark.png");
+  background-image: url("../img/price_icon_checkmark.svg");
   background-repeat: no-repeat;
   background-position: 50% 50%;
 
@@ -158,7 +175,7 @@
     width: 40px;
     height: 30px;
     margin-left: 40px;
-    background-image: url("../img/price_icon_checkmark.png");
+    background-image: url("../img/price_icon_checkmark.svg");
     background-repeat: no-repeat;
     background-position: 50% 50%;
   }
@@ -172,7 +189,7 @@
   display: block;
   width: 40px;
   height: 30px;
-  background-image: url("../img/price_icon_cros.svg");
+  background-image: url("../img/price_icon_cross.svg");
   background-repeat: no-repeat;
   background-position: 50% 50%;
 
@@ -187,7 +204,7 @@
     width: 40px;
     height: 30px;
     margin-left: 40px;
-    background-image: url("../img/price_icon_cros.svg");
+    background-image: url("../img/price_icon_cross.svg");
     background-repeat: no-repeat;
     background-position: 50% 50%;
   }
