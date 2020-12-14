@@ -49,6 +49,15 @@
 }
 
 .download__wrapper {
+  position: relative;
+  margin: 0 auto;
+
+  @media (min-width: @desktop-width) {
+    max-width: 1200px;
+  }
+}
+
+.download__info-wrapper {
   box-sizing: border-box;
   width: 320px;
   min-height: 665px;
@@ -65,9 +74,9 @@
   }
 
   @media (min-width: @desktop-width) {
-    width: 562px;
+    width: 432px;
     min-height: 0;
-    padding: 182px 130px 0 130px;
+    padding: 182px 0 0 130px;
   }
 }
 
