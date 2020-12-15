@@ -1,0 +1,17 @@
+.personal-info {
+  @media (min-width: @tablet-width){
+    order: 1;
+  }
+
+  @media (min-width: @desktop-width){
+    width: 45%;
+  }
+}
+.personal-info__item{
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: @tablet-width){
+    flex-direction: row;
+  }
+}
