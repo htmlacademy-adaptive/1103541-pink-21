@@ -1,0 +1,32 @@
+.range-controls {
+  position: relative;
+
+}
+
+.range-controls__scale {
+    width: 240px;
+    height: 2px;
+    background-color: #000000;
+
+    @media (min-width: @tablet-width) {
+      width: 190px;
+    }
+}
+
+.range-contorls__toggle {
+  position: absolute;
+  top: -7px;
+  left: 192px;
+
+  width: 10px;
+  height: 10px;
+
+  background: #ffffff;
+  border: 2px solid #d22856;
+  border-radius: 50%;
+  cursor: pointer;
+
+  @media (min-width: @tablet-width) {
+   left: 150px;
+  }
+}

@@ -1,12 +1,15 @@
 .catalog__discription {
   margin: 0;
-  padding: 50px 37px;
+  padding: 45px 40px 50px 40px;
   font-size: 14px;
   line-height: 30px;
   text-align: center;
   color: #283645;
 
   @media (min-width: @tablet-width){
+    box-sizing: border-box;
+    min-height: 228px;
+    padding: 88px 65px 50px 65px;
     font-size: 18px;
   }
 }
@@ -20,17 +23,27 @@
 }
 
 .catalog__item {
+  @media (min-width: @tablet-width){
+    width: 50%;
+  }
+}
 
+.catalog__item--dayfoto{
+  width: 100%;
+
+  @media (min-width: @tablet-width) {
+    position: relative;
+  }
 }
 
 .catalog__post{
   margin: 0 20px;
-  padding: 20px 0 20px 20px;
+  padding: 17px 17px 17px 17px;
   background-color: #f2f2f2;
 }
 
-.catalig__post-author {
-  display: block;
+.catalog__post-author {
+  display: inline-block;
   font-size: 14px;
   line-height: 24px;
   font-weight: 700;
@@ -40,6 +53,7 @@
 }
 
 .catalog__post-time {
+  display: inline-block;
   margin: 0;
 
   font-size: 12px;
@@ -58,12 +72,25 @@
 
 .catalog__post-like {
   margin: 0 20px;
-  padding: 0 0 20px 20px;
+  padding: 0 20px 20px 50px;
   font-size: 12px;
-  line-height: 24px;
   text-transform: uppercase;
   color: #d22856;
   background-color: #f2f2f2;
+  background-image: url("../img/catalog_icon_heart.svg");
+  background-repeat: no-repeat;
+  background-position: 16px 0px;
+}
+
+.catalog__post-like--dayfoto {
+  @media (min-width: @tablet-width){
+    position: absolute;
+    padding: 0 60px 0 0;
+    top: 535px;
+    right: 30px;
+    background-position: 130px 0px;
+  }
+
 }
 
 .catalog__image {

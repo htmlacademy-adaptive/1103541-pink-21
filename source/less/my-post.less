@@ -1,6 +1,9 @@
+.my-post__wrapper{
+  padding: 40px 0 0 0;
+}
 .my-post__text {
   margin: 0;
-  padding: 4px 30px 0 30px;
+  padding: 0px 30px 0 30px;
 
   font-size: 14px;
   line-height: 30px;
@@ -12,8 +15,33 @@
   }
 }
 
+.my-post__list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  background-color: #f2f2f2;
+
+  @media (min-width: @tablet-width){
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+.my-post__item{
+  margin: 0;
+  padding: 0;
+}
+
+.my-post__button-wrapper {
+  padding: 70px 20px 35px 20px;
+}
+
 .my-post__button{
-  padding: 15px 90px;
+  margin-bottom: 10px;
+  padding: 14px 90px;
+  width: 280px;
   border: 3px solid;
   border-radius: 30px;
 
@@ -30,3 +58,9 @@
   border-color: #283645;
   opacity: 0.1;
 }
+.my-post__image {
+  display: block;
+  margin: 0 20px;
+  padding: 62px 0 45px 0;
+}
+
