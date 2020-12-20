@@ -78,8 +78,8 @@
           <li class="main-navigation__item">
             <a class="main-navigation__link" href="catalog.html">Фотографии</a>
           </li>
-          <li class="main-navigation__item">
-            <a class="main-navigation__link main-navigation__link--activ" href="">Конкурс</a>
+          <li class="main-navigation__item main-navigation__link--activ">
+            <a class="main-navigation__link " href="">Конкурс</a>
           </li>
           <li class="main-navigation__item">
             <a class="main-navigation__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
@@ -91,7 +91,7 @@
       <h1 class="page-main__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
       <section class="сompetition">
         <div class="competition__wrapper">
-          <p class="competition__description">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!<span class="competition__description--not-mobile"> Пожалуйста, заполните форму ниже:</span></p>
+          <p class="competition__description">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!<span class="competition__description--not-mobile">Пожалуйста, заполните форму ниже:</span></p>
           <form class="participant-form" action="https://echo.htmlacademy.ru" method="get">
             <fieldset class="participant-form__fieldset personal-info">
               <legend class="visually-hidden">Персональные данные</legend>
@@ -109,50 +109,61 @@
               <legend class="participant-form__fieldset-subtitle">Ваши безбашенные достижения в путешествии</legend>
               <label class="personal-result__item checkbox">
                 <input class="checkbox__input" type="checkbox" name="foto-with-shark" checked>
+                <span class="checkbox__icon"></span>
                 Сделать селфи с акулой
               </label>
               <label class="personal-result__item checkbox">
                 <input class="checkbox__input" type="checkbox" name="burned-on-the-beach" checked>
+                <span class="checkbox__icon"></span>
                 Обгорел на пляже
               </label>
               <label class="personal-result__item checkbox">
                 <input class="checkbox__input" type="checkbox" name="saw-chuck-noris">
+                <span class="checkbox__icon"></span>
                 Видел Чака Норриса
               </label>
               <label class="personal-result__item checkbox">
                 <input class="checkbox__input" type="checkbox" name="buy-souvenirs">
+                <span class="checkbox__icon"></span>
                 Накупил сувенирова
               </label>
               <label class="personal-result__item checkbox">
-                <input class="checkbox__input" type="checkbox" name="held-tower">
+                <input class="checkbox__input" type="checkbox" name="held-tower" checked>
+                <span class="checkbox__icon"></span>
                 Удержал башню
               </label>
               <label class="personal-result__item checkbox">
                 <input class="checkbox__input"  type="checkbox" name="destroyed-hotel">
+                <span class="checkbox__icon"></span>
                 Разгромил отель
               </label>
             </fieldset>
             <fieldset class="participant-form__fieldset contact-info">
               <legend class="participant-form__fieldset-subtitle contact-info__title">Контактная информация</legend>
-              <label class="contact-info__item label-text" for="phone">Номер телефона:<!--Поменять класс-->
+              <label class="contact-info__item label-text" for="phone">Номер телефона:
                 <input class="input-text" type="tel" name="phone" id="phone" placeholder="Номер, пожалуйста">
+                <span class="contact-info__icon-phone"></span>
               </label>
               <label class="contact-info__item label-text" for="email">Адрес почты:
                 <input class="input-text" type="email" name="mail" id="mail" placeholder="Введите почту*" required>
+                <span class="contact-info__icon-email"></span>
               </label>
             </fieldset >
             <fieldset class="participant-form__fieldset application">
               <legend class="participant-form__fieldset-subtitle">С каким приложением путешествовали?</legend>
               <label class="application__item radiobutton">
                 <input class="radiobutton__input" type="radio" name="application" value="Pink для iOS" checked>
+                <span class="radiobutton__icon"></span>
                 Pink для iOS
               </label>
               <label class="application__item radiobutton">
                 <input class="radiobutton__input"  type="radio" name="application" value="Pink на Android">
+                <span class="radiobutton__icon"></span>
                 Pink на Android
               </label>
               <label class="application__item radiobutton">
                 <input class="radiobutton__input" type="radio" name="application" value="Windows Phone">
+                <span class="radiobutton__icon"></span>
                 Windows Phone
               </label>
             </fieldset>
@@ -161,8 +172,8 @@
               <textarea class="input-text" name="emotion" id="emotion" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
             </fieldset>
             <div class="participant-form__note-wrapper">
-              <button class="competition__button button">Отправить форму</button><!--поменять класс кнопки-->
-              <p class="participant-form__note"><span class="participant-form__note participant-form__note--star">*</span>—обязательные поля</p>
+              <button class="participant-form__button button">Отправить форму</button>
+              <p class="participant-form__note"><span class="participant-form__note participant-form__note--star">* </span>— обязательные <span class="participant-form__note--desktop">для заполнения</span> поля</p>
             </div>
           </form>
         </div>
@@ -297,5 +308,19 @@
         </div>
       </div>
     </footer>
+    <section class="popup popup__failure">
+      <h2 class="popup__title popup__title--failure">Что-то пошло не так!</h2>
+      <p class="popup__description popup__description--failure">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+      <div class="popup__button-wrapper popup__button-wrapper--failure">
+      <button class="popup__button popup__button--failure button">Ок</button>
+      </div>
+    </section>
+    <section class="popup popup__success">
+      <h2 class="popup__title popup__title--success">Ваша заявка отправлена</h2>
+      <p class="popup__description popup__description--success">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим вас.</p>
+      <div class="popup__button-wrapper popup__button-wrapper--success">
+      <button class="popup__button popup__button--success button">Закрыть окно</button>
+      </div>
+    </section>
   </body>
 </html>

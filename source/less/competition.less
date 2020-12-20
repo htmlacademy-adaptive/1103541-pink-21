@@ -4,31 +4,26 @@
 
 .competition__description {
   margin: 0;
-  padding: 53px 20px;
+  padding: 45px 20px 34px 20px;
   font-size: 14px;
   line-height: 30px;
   text-align: center;
   color: #283645;
 
-  @media (min-width: @tablet-width){
-    padding: 100px 65px;
+  @media (min-width: @tablet-width) {
+    padding: 90px 60px 70px 58px;
     font-size: 18px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 90px 220px 0 220px;
   }
 }
 
 .competition__description--not-mobile {
   display: none;
 
-  @media (min-width: @tablet-width){
-    display: block;
+  @media (min-width: @tablet-width) {
+    display: inline-block;
   }
-}
-
-.competition__button {
-  padding: 20px 47px;
-  font-weight: bold;
-  color: #ffffff;
-  text-transform: uppercase;
-  background-color: #2aab6d;
-  border-radius: 5px;
 }
