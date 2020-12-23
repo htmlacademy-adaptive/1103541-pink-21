@@ -1,16 +1,19 @@
 .range-controls {
   position: relative;
-
 }
 
 .range-controls__scale {
-    width: 240px;
-    height: 2px;
-    background-color: #000000;
+  width: 240px;
+  height: 2px;
+  background-color: #000000;
 
-    @media (min-width: @tablet-width) {
-      width: 190px;
-    }
+  @media (min-width: @tablet-width) {
+    width: 200px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 288px;
+  }
 }
 
 .range-contorls__toggle {
@@ -25,8 +28,34 @@
   border: 2px solid #d22856;
   border-radius: 50%;
   cursor: pointer;
+}
 
+.range-contorls__toggle--crop {
   @media (min-width: @tablet-width) {
-   left: 150px;
+    left: 145px;
+  }
+
+  @media (min-width: @desktop-width) {
+    left: 70px;
+  }
+}
+
+.range-contorls__toggle--saturation {
+  @media (min-width: @tablet-width) {
+    left: 23px;
+  }
+
+  @media (min-width: @desktop-width) {
+    left: 245px;
+  }
+}
+
+.range-contorls__toggl--contrast {
+  @media (min-width: @tablet-width) {
+    left: 95px;
+  }
+
+  @media (min-width: @desktop-width) {
+    left: 160px;
   }
 }

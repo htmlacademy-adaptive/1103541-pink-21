@@ -1,9 +1,18 @@
-.my-post__wrapper{
-  padding: 40px 0 0 0;
+.my-post__text-wrapper {
+  padding: 43px 0 42px 0;
+
+  @media (min-width: @tablet-width) {
+    padding: 45px 0 68px 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 5px 0 68px 0;
+  }
 }
+
 .my-post__text {
   margin: 0;
-  padding: 0px 30px 0 30px;
+  padding: 0 30px 0 30px;
 
   font-size: 14px;
   line-height: 30px;
@@ -15,52 +24,107 @@
   }
 }
 
-.my-post__list {
-  margin: 0;
-  padding: 0;
+.my-post__wrapper {
+  padding: 20px 0 0 0;
   display: flex;
   flex-direction: column;
-  list-style: none;
   background-color: #f2f2f2;
 
-  @media (min-width: @tablet-width){
+  @media (min-width: @tablet-width) {
     flex-direction: row;
-    flex-wrap: wrap;
+    margin: 0 0 2px 0;
+    padding: 40px 0 0 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0 130px 30px 130px;
+    padding: 34px 0 15px 60px;
   }
 }
 
-.my-post__item{
-  margin: 0;
-  padding: 0;
+.my-post__image {
+  display: block;
+  margin: 0 20px;
+  padding: 0 0 45px 0;
+
+  @media (min-width: @tablet-width) {
+    margin: 20px 20px 0 20px;
+  }
+}
+
+.my-post_filter-wrapper {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .my-post__button-wrapper {
-  padding: 70px 20px 35px 20px;
+  padding: 75px 20px 38px 20px;
+
+  @media (min-width: @tablet-width) {
+    padding: 67px 20px 34px 28px;
+    width: 96%;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 155px 0 0 25px;
+    display: flex;
+    flex-direction: row;
+    width: 96%;
+  }
 }
 
-.my-post__button{
+.my-post__button {
+  box-sizing: border-box;
   margin-bottom: 10px;
-  padding: 14px 90px;
   width: 280px;
+  height: 54px;
   border: 3px solid;
   border-radius: 30px;
 
   font-weight: 700;
   text-align: center;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 24px;
+    width: 95%;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 183px;
+    margin-left: 45px;
+  }
 }
-.my-post__button--active{
+
+.my-post__button--active {
   color: #d22856;
   border-color: #d22856;
+
+  &:hover,
+  &:focus {
+    background-color: #d22856;
+    color: #ffffff;
+  }
+
+  &:active {
+    color: rgba(235, 154, 175, 0.702);
+  }
 }
 
 .my-post__button--cancel {
   color: #283645;
   border-color: #283645;
   opacity: 0.1;
-}
-.my-post__image {
-  display: block;
-  margin: 0 20px;
-  padding: 62px 0 45px 0;
-}
 
+  &:hover,
+  &:focus {
+    opacity: 0.3;
+  }
+
+  &:active {
+    background-color: #283645;
+    color: #ffffff;
+    opacity: 0.3;
+  }
+}
