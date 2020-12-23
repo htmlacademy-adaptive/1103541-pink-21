@@ -1582,10 +1582,28 @@
 .catalog__item--dayfoto {
   width: 100%;
   margin: 0;
+  position: relative;
+}
+.catalog__item--dayfoto::before {
+  content: "панорама дня";
+  position: absolute;
+  z-index: 1;
+  right: 1px;
+  top: 0;
+  color: #ffffff;
+  background-color: #d22856;
+  padding: 8px 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 12px;
+}
+@media (min-width: 660px) {
+  .catalog__item--dayfoto::before {
+    top: 55px;
+  }
 }
 @media (min-width: 660px) {
   .catalog__item--dayfoto {
-    position: relative;
     margin-bottom: 51px;
   }
 }
@@ -1600,6 +1618,7 @@
 .catalog__image--dayfoto {
   display: block;
   position: relative;
+  left: -20px;
 }
 @media (min-width: 1200px) {
   .catalog__image--dayfoto {
@@ -1620,7 +1639,7 @@
 @media (min-width: 1200px) {
   .catalog__post {
     min-height: 114px;
-    padding: 23px 0 0 28px;
+    padding: 23px 28 0 28px;
   }
 }
 @media (min-width: 660px) {
@@ -1631,6 +1650,7 @@
 }
 @media (min-width: 1200px) {
   .catalog__post--dayfoto {
+    padding: 24px 30px 0 28px;
     min-height: 95px;
   }
 }
