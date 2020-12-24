@@ -1,0 +1,38 @@
+.radiobutton {
+  margin-left: 45px;
+  font-family: "Open Sans", "Arial Black", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: #283645;
+}
+
+.radiobutton__input {
+  margin-right: 20px;
+}
+
+.radiobutton__icon {
+  position: absolute;
+  width: 41px;
+  height: 41px;
+  margin-left: -65px;
+  margin-top: -5px;
+  background-image: url("../img/radiobutton_icon_off.svg");
+  background-repeat: no-repeat;
+}
+
+.radiobutton__input:hover + .radiobutton__icon {
+  border: 2px solid;
+  border-radius: 50%;
+}
+
+.radiobutton__input:active + .radiobutton__icon {
+  border: 2px solid #d22856;
+  border-radius: 50%;
+}
+
+.radiobutton__input:checked + .radiobutton__icon {
+  background-image: url("../img/radiobutton_icon_on.svg");
+  background-repeat: no-repeat;
+}
