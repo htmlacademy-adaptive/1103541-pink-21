@@ -95,12 +95,15 @@
           <div class="download__info-wrapper">
             <p class="download__slogan">Взгляните на жизнь иначе!</p>
             <picture>
+              <source type="image/webp" media="(min-width: 1200px)" srcset="img/download_hand_desktop.webp 1x, img/download_hand_desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 660px)" srcset="img/download_hand_tablet.webp 1x, img/download_hand_tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/download_hand_mobile.webp 1x, img/download_hand_mobile@2x.webp 2x">
               <source media="(min-width: 1200px)" srcset="img/download_hand_desktop.png 1x, img/download_hand_desktop@2x.png 2x">
               <source media="(min-width: 660px)" srcset="img/download_hand_tablet.png 1x, img/download_hand_tablet@2x.png 2x">
-            <img class="download__image" src="img/download_hand_mobile.png" srcset="img/download_hand_mobile@2x.png 2x" alt="Рука с телефоном, на котором открыто приложение pink">
+              <img class="download__image" src="img/download_hand_mobile.png" srcset="img/download_hand_mobile@2x.png 2x" alt="Рука с телефоном, на котором открыто приложение pink">
             </picture>
             <div class="download__button-wrapper">
-              <a сlass="download__button" href="#">Скачать приложение</a>
+              <a href="#">Скачать приложение</a>
             </div>
             <ul class="download__list">
               <li class="download__item">
@@ -129,14 +132,20 @@
                 <h3 class="advantages__item-title">Поднимает настроение</h3>
                 <p class="advantages__item-description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
                 </div>
-              <img class="advantages__item-image advantages__item-image--first" src="img/advantages_phone_screen1_desktop.png" srcset="img/advantages_phone_screen1_desktop@2x.png 2x" alt="Фото на телефон">
-            </li>
+              <picture>
+                <source type="image/webp" srcset="img/advantages_phone_screen1_desktop.webp 1x, img/advantages_phone_screen1_desktop@2x.webp 2x">
+                <img class="advantages__item-image advantages__item-image--first" src="img/advantages_phone_screen1_desktop.png" srcset="img/advantages_phone_screen1_desktop@2x.png 2x" alt="Фото на телефон">
+              </picture>
+              </li>
             <li class="advantages__item">
               <div class="advantages__item-wrapper">
                 <h3 class="advantages__item-title">Меняет мир вокруг</h3>
                 <p class="advantages__item-description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
                 </div>
-              <img class="advantages__item-image advantages__item-image--second" src="img/advantages_phone_screen2_desktop.png" srcset="img/advantages_phone_screen2_desktop@2x.png 2x" alt="Фото на телефон c фильтром">
+              <picture>
+                <source type="image/webp" srcset="img/advantages_phone_screen2_desktop.webp 1x, img/advantages_phone_screen2_desktop@2x.webp 2x">
+                <img class="advantages__item-image advantages__item-image--second" src="img/advantages_phone_screen2_desktop.png" srcset="img/advantages_phone_screen2_desktop@2x.png 2x" alt="Фото на телефон c фильтром">
+              </picture>
             </li>
             <li class="advantages__item">
               <div class="advantages__item-wrapper">
@@ -144,6 +153,9 @@
                 <p class="advantages__item-description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
               </div>
               <picture>
+                <source type="image/webp" media="(min-width: 1200px)" srcset="img/advantages_phone_screen3_desktop.webp 1x, img/advantages_phone_screen3_desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 660px)" srcset="img/advantages_phone_screen3_tablet.webp 1x, img/advantages_phone_screen3_tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/advantages_phone_screen3_mobile.webp 1x, img/advantages_phone_screen3_mobile@2x.webp 2x">
                 <source media="(min-width: 1200px)" srcset="img/advantages_phone_screen3_desktop.png 1x, img/advantages_phone_screen3_desktop@2x.png 2x">
                 <source media="(min-width: 660px)" srcset="img/advantages_phone_screen3_tablet.png 1x, img/advantages_phone_screen3_tablet@2x.png 2x">
                 <img class="advantages__item-image advantages__item-image--third" src="img/advantages_phone_screen3_mobile.png" srcset="img/advantages_phone_screen3_mobile@2x.png 2x" alt="Фото на телефон c фильтром и смайликом">
@@ -209,19 +221,19 @@
           <div class="price__table-wrapper slider">
             <table class="price__table">
               <tr class="price__caption slider__list">
-                <th class="price__caption-item price__caption-item--none"></th>
+                <th class="price__caption-item price__caption-item--none">
                   <span></span>
                 </th>
                 <th class="price__caption-item slider__item">
-                  <h3 class="price__caption-title">База</h3>
+                  <p class="price__caption-title">База</p>
                   <p class="price__caption-text">1,99 USD</p>
                 </th>
                 <th class="price__caption-item price__caption-item--hit slider__item">
-                  <h3 class="price__caption-title">Стандарт</h3>
+                  <p class="price__caption-title">Стандарт</p>
                   <p class="price__caption-text">3,99 USD</p>
                 </th>
                 <th class="price__caption-item slider__item">
-                  <h3 class="price__caption-title">Анлим</h3>
+                  <p class="price__caption-title">Анлим</p>
                   <p class="price__caption-text">9,99 USD</p>
                 </th>
               </tr>
@@ -322,9 +334,11 @@
             </li>
           </ul>
           <div class="contacts__map-wrapper">
-            <!--<iframe class="contacts__yandex-map"src="https://yandex.ru/map-widget/v1/-/CCUEAOTSPD" width="560" height="400" frameborder="0" allowfullscreen="true"></iframe>
-            -->
+            <iframe class="contacts__yandex-map"src="https://yandex.ru/map-widget/v1/-/CCUEAOTSPD" width="560" height="400" frameborder="0" allowfullscreen="true"></iframe>
             <picture>
+              <source type="image/webp" media="(min-width: 1200px)" srcset="img/contacts_map_desktop.webp 1x, img/contacts_map_desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 660px)" srcset="img/contacts_map_tablet.webp 1x, img/contacts_map_tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/contacts_map_mobile.webp 1x, img/contacts_map_mobile@2x.webp 2x">
               <source media="(min-width: 1200px)" srcset="img/contacts_map_desktop.jpg 1x, img/contacts_map_desktop@2x.jpg 2x">
               <source media="(min-width: 660px)" srcset="img/contacts_map_tablet.jpg 1x, img/contacts_map_tablet@2x.jpg 2x">
               <img class="contacts__image-map" src="img/contacts_map_mobile.jpg" srcset="img/contacts_map_mobile@2x.jpg 2x" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">

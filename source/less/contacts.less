@@ -14,7 +14,6 @@
   }
 
   @media (min-width: @desktop-width) {
-    max-width: 1200px;
     margin: 0 auto;
     padding: 60px 0 0 0;
   }
@@ -209,13 +208,20 @@
 
 .contacts__yandex-map {
   position: relative;
-  width: 320px;
+  width: 100%;
   height: 200;
   z-index: 2;
+  @media (min-width: @tablet-width) {
+    height: 373px;
+  }
+
+  @media (min-width: @desktop-width) {
+    height: 502px;
+  }
 }
 
 .contacts__image-map {
-  position: static;
+  position: absolute;
   right: 320px;
   width: 100%;
   height: 200px;
@@ -227,5 +233,6 @@
 
   @media (min-width: @desktop-width) {
     height: 502px;
+    top: 0px;
   }
 }
