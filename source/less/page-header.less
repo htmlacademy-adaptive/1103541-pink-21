@@ -4,7 +4,8 @@
   @media (min-width: @desktop-width) {
     position: absolute;
     z-index: 2;
-    width: 80%;
+    box-sizing: border-box;
+    width: 100%;
     padding: 20px 130px 0 130px;
     display: flex;
     flex-direction: row;
@@ -16,6 +17,15 @@
 .page-header--nav-opened {
   @media (max-width: @mobile-tablet-width-only) {
     background-color: #283645;
+  }
+}
+
+.page-header--nav-closed {
+  @media (max-width: @mobile-tablet-width-only) {
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
   }
 }
 

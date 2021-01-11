@@ -6,6 +6,17 @@
   color: #283645;
   border: 2px solid #e5e5e5;
   border-radius: 1px;
+  outline: none;
+
+  &:hover,
+  &:focus {
+    border-color: #283645;
+  }
+
+  &:active {
+    border-color: #d22856;
+    outline: #d22856;
+  }
 
   @media (min-width: @tablet-width) {
     flex-grow: 1;
@@ -17,4 +28,5 @@
   font-size: 18px;
   line-height: 30px;
   color: #283645;
+  opacity: 1;
 }

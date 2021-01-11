@@ -1,6 +1,6 @@
 .catalog__discription {
   margin: 0;
-  padding: 45px 40px 50px 40px;
+  padding: 45px 35px 50px 35px;
   font-size: 14px;
   line-height: 30px;
   text-align: center;
@@ -27,7 +27,7 @@
   flex-wrap: wrap;
 
   @media (min-width: @desktop-width) {
-    padding: 0 130px;
+    padding: 0 110px 0 130px;
   }
 }
 
@@ -51,12 +51,12 @@
     margin-left: 0;
   }
 }
-
+/*
 .catalog__item:nth-child(3n+1) {
   @media (min-width: @desktop-width) {
     margin-right: 0;
   }
-}
+}*/
 
 .catalog__item--dayfoto {
   width: 100%;
@@ -67,7 +67,7 @@
     content: "панорама дня";
     position: absolute;
     z-index: 1;
-    right: 1px;
+    left: 138px;
     top: 0;
     color: #ffffff;
     background-color: #d22856;
@@ -77,7 +77,12 @@
     font-size: 12px;
 
     @media (min-width: @tablet-width) {
-      top: 55px;
+      top: 56px;
+      left: 77%;
+    }
+
+    @media (min-width: @desktop-width) {
+      left: 799px;
     }
   }
 
@@ -86,7 +91,9 @@
   }
 
   @media (min-width: @desktop-width) {
+    width: 98%;
     margin-bottom: 52px;
+    margin-right: 0;
   }
 }
 
@@ -167,7 +174,7 @@
   font-size: 12px;
   text-transform: uppercase;
   color: #d22856;
-  background-image: url("../img/catalog_icon_heart.svg");
+  background-image: url("../img/icons/icon_heart.svg");
   background-repeat: no-repeat;
   background-position: 16px 2px;
 
