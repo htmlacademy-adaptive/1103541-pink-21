@@ -25,8 +25,8 @@ const styles = () => {
       autoprefixer(),
       csso()
     ]))
-    .pipe(sourcemap.write("."))
     .pipe(rename("style.min.css"))
+    .pipe(sourcemap.write("."))
     .pipe(gulp.dest("build/css"))
     .pipe(sync.stream());
 }
@@ -81,7 +81,7 @@ const sprite = () => {
   return gulp.src("source/img/icons/*.svg")
     .pipe(svgstore())
     .pipe(rename("sprite_auto.svg"))
-    .pipe(gulp.dest("source/img/icons"))
+    .pipe(gulp.dest("build/img/icons"))
 }
 
 exports.sprite = sprite;
@@ -124,6 +124,13 @@ const server = (done) => {
 
 exports.server = server;
 
+// Reload
+
+const reload = done => {
+  sync.reload();
+  done();
+}
+
 // Watcher
 
 const watcher = () => {
@@ -135,15 +142,20 @@ const watcher = () => {
 const build = gulp.series(
   clean,
   gulp.parallel(
-    styles, html, copy, createWebp
+    styles, html, copy, sprite, images, createWebp
+  ),
+  gulp.series(
+    server
   )
-)
+);
+
 exports.build = build;
+
 
 exports.default = gulp.series(
   clean,
   gulp.parallel(
-    styles, html, copy, createWebp
+    styles, html, sprite, copy, createWebp
   ),
   gulp.series(
   server, watcher

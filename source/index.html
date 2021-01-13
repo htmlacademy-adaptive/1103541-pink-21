@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
     <link rel="stylesheet" href="css/style.min.css">
+    <link rel="preload" href="/fonts/opensans.woff" as="font">
   </head>
   <body class="page__body">
     <header class="page-header page-header--nav-opened">
@@ -37,7 +38,7 @@
         <button class="main-navigation__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <ul class="main-navigation__list">
           <li class="main-navigation__item">
-            <a class="main-navigation__link main-navigation__link--activ" href="">Главная</a>
+            <a class="main-navigation__link" href="">Главная</a>
           </li>
           <li class="main-navigation__item">
             <a class="main-navigation__link" href="catalog.html">Фотографии</a>
@@ -90,42 +91,46 @@
             <p class="advantages__text">Устали от серости мегаполиса?</p>
             <p class="advantages__text">Нам есть, что вам<br> предложить!</p>
           </div>
-          <ul class="advantages__list">
-            <li class="advantages__item">
-              <div class="advantages__item-wrapper">
-                <h3 class="advantages__item-title">Поднимает настроение</h3>
-                <p class="advantages__item-description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
-              </div>
-              <picture>
-                <source type="image/webp" srcset="img/advantages_phone_screen1_desktop.webp 1x, img/advantages_phone_screen1_desktop@2x.webp 2x">
-                <img class="advantages__item-image advantages__item-image--first" src="img/advantages_phone_screen1_desktop.png" srcset="img/advantages_phone_screen1_desktop@2x.png 2x" alt="Фото на телефон">
-              </picture>
-            </li>
-            <li class="advantages__item">
-              <div class="advantages__item-wrapper">
-                <h3 class="advantages__item-title">Меняет мир вокруг</h3>
-                <p class="advantages__item-description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
-                </div>
-              <picture>
-                <source type="image/webp" srcset="img/advantages_phone_screen2_desktop.webp 1x, img/advantages_phone_screen2_desktop@2x.webp 2x">
-                <img class="advantages__item-image advantages__item-image--second" src="img/advantages_phone_screen2_desktop.png" srcset="img/advantages_phone_screen2_desktop@2x.png 2x" alt="Фото на телефон c фильтром">
-              </picture>
-            </li>
-            <li class="advantages__item">
-              <div class="advantages__item-wrapper">
-                <h3 class="advantages__item-title">Заводите новых друзей</h3>
-                <p class="advantages__item-description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
-              </div>
-              <picture>
-                <source type="image/webp" media="(min-width: 1200px)" srcset="img/advantages_phone_screen3_desktop.webp 1x, img/advantages_phone_screen3_desktop@2x.webp 2x">
-                <source type="image/webp" media="(min-width: 660px)" srcset="img/advantages_phone_screen3_tablet.webp 1x, img/advantages_phone_screen3_tablet@2x.webp 2x">
-                <source type="image/webp" srcset="img/advantages_phone_screen3_mobile.webp 1x, img/advantages_phone_screen3_mobile@2x.webp 2x">
-                <source media="(min-width: 1200px)" srcset="img/advantages_phone_screen3_desktop.png 1x, img/advantages_phone_screen3_desktop@2x.png 2x">
-                <source media="(min-width: 660px)" srcset="img/advantages_phone_screen3_tablet.png 1x, img/advantages_phone_screen3_tablet@2x.png 2x">
-                <img class="advantages__item-image advantages__item-image--third" src="img/advantages_phone_screen3_mobile.png" srcset="img/advantages_phone_screen3_mobile@2x.png 2x" alt="Фото на телефон c фильтром и смайликом">
-              </picture>
-            </li>
-          </ul>
+          <div class="bg-slice bg-slice__advantages">
+            <div class="advantages__list-wrapper">
+              <ul class="advantages__list">
+                <li class="advantages__item">
+                  <div class="advantages__item-wrapper">
+                    <h3 class="advantages__item-title">Поднимает настроение</h3>
+                    <p class="advantages__item-description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+                  </div>
+                  <picture>
+                    <source type="image/webp" srcset="img/advantages_phone_screen1_desktop.webp 1x, img/advantages_phone_screen1_desktop@2x.webp 2x">
+                    <img class="advantages__item-image advantages__item-image--first" src="img/advantages_phone_screen1_desktop.png" srcset="img/advantages_phone_screen1_desktop@2x.png 2x" alt="Фото на телефон">
+                  </picture>
+                </li>
+                <li class="advantages__item">
+                  <div class="advantages__item-wrapper">
+                    <h3 class="advantages__item-title">Меняет мир вокруг</h3>
+                    <p class="advantages__item-description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+                    </div>
+                  <picture>
+                    <source type="image/webp" srcset="img/advantages_phone_screen2_desktop.webp 1x, img/advantages_phone_screen2_desktop@2x.webp 2x">
+                    <img class="advantages__item-image advantages__item-image--second" src="img/advantages_phone_screen2_desktop.png" srcset="img/advantages_phone_screen2_desktop@2x.png 2x" alt="Фото на телефон c фильтром">
+                  </picture>
+                </li>
+                <li class="advantages__item">
+                  <div class="advantages__item-wrapper">
+                    <h3 class="advantages__item-title">Заводите новых друзей</h3>
+                    <p class="advantages__item-description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+                  </div>
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1200px)" srcset="img/advantages_phone_screen3_desktop.webp 1x, img/advantages_phone_screen3_desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 660px)" srcset="img/advantages_phone_screen3_tablet.webp 1x, img/advantages_phone_screen3_tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="img/advantages_phone_screen3_mobile.webp 1x, img/advantages_phone_screen3_mobile@2x.webp 2x">
+                    <source media="(min-width: 1200px)" srcset="img/advantages_phone_screen3_desktop.png 1x, img/advantages_phone_screen3_desktop@2x.png 2x">
+                    <source media="(min-width: 660px)" srcset="img/advantages_phone_screen3_tablet.png 1x, img/advantages_phone_screen3_tablet@2x.png 2x">
+                    <img class="advantages__item-image advantages__item-image--third" src="img/advantages_phone_screen3_mobile.png" srcset="img/advantages_phone_screen3_mobile@2x.png 2x" alt="Фото на телефон c фильтром и смайликом">
+                  </picture>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </section>
       <article class="article">
@@ -181,7 +186,7 @@
           </div>
         </div>
       </section>
-      <section class="price">
+      <section class="price bg-slice bg-slice__price--desktop">
         <h2 class="visually-hidden">Тарифы и стоимость</h2>
           <div class="price__table-wrapper slider">
             <table class="price__table">
