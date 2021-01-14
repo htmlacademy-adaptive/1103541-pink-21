@@ -101,6 +101,22 @@
   }
 }
 
+.main-navigation--nojs {
+  background-color: #283645;
+  min-height: 255px;
+
+  @media (min-width: @desktop-width) {
+    min-width: 618px;
+    min-height: 90px;
+    background-color: transparent;
+    margin-right: 20px;
+  }
+}
+
+.main-navigation--nojs .main-navigation__toggle {
+  display: none;
+}
+
 .main-navigation__list {
   margin: 0;
   padding: 0;
@@ -144,7 +160,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    padding: 20px 0;
+    padding: 17px 0 5px 0;
     font-weight: normal;
     text-transform: none;
     border: none;

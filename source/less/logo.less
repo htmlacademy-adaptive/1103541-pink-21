@@ -1,26 +1,50 @@
-.logo__glasses {
+.logo {
+  fill: #ffffff;
+
+  &:hover,
+  &:focus {
+    fill: #d22856;
+  }
+
+  &:active {
+    fill: #ffffff;
+    opacity: 0.3;
+  }
+}
+
+.logo--footer {
+  fill: #283645;
+
+  &:active {
+    fill: #283645;
+    opacity: 0.3;
+  }
+}
+
+.logo__glasses--footer {
+  fill: #d22856;
+
+  &:active {
+    fill: #d22856;
+    opacity: 0.3;
+  }
+}
+
+.logo__glasses-no-stars {
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
+
+.logo__glasses-no-stars--header {
+  @media (max-width: @mobile-width-only) {
+    display: none;
+  }
+}
+
+.logo__glasses-stars {
   display: none;
-}
 
-.logo__glasses--mobile {
-  display: block;
-
-  @media (min-width: @desktop-width) {
-    display: none;
-  }
-}
-
-.logo__glasses--tablet {
-  @media (min-width: @tablet-width) {
-    display: block;
-  }
-
-  @media (min-width: @desktop-width) {
-    display: none;
-  }
-}
-
-.logo__glasses--desktop {
   @media (min-width: @desktop-width) {
     display: block;
   }
@@ -28,6 +52,7 @@
 
 .logo__stars {
   display: none;
+  fill: #d22856;
 
   @media (min-width: @desktop-width) {
     display: block;

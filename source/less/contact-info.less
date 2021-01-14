@@ -5,7 +5,7 @@
   @media (min-width: @tablet-width) {
     position: relative;
     margin: 57px 20px 0 20px;
-    padding: 35px 70px 0 60px;
+    padding: 35px 40px 0 60px;
     display: flex;
     flex-direction: column;
     order: 2;
@@ -26,8 +26,8 @@
 }
 
 .contact-info__item {
-
   @media (min-width: @tablet-width) {
+    position: relative;
     margin-left: 18px;
     padding: 0 0 28px 0;
     display: flex;
@@ -35,9 +35,8 @@
   }
 
   @media (min-width: @desktop-width) {
-    width: 36%;
+    width: 40%;
     margin-left: 75px;
-    margin-right: 35px;
     padding: 0 0 15px 0;
   }
 }
@@ -47,12 +46,13 @@
 }
 
 .contact-info__item .input-text {
-  margin: 5px 0 15px 0;
+  margin: 5px 0 19px 0;
   width: 89%;
 
   @media (min-width: @tablet-width) {
-    margin: 0 0 10px -18px;
-    width: 98%;
+    box-sizing: border-box;
+    margin: 0 0 12px -18px;
+    width: 100%;
   }
 
   @media (min-width: @desktop-width) {
@@ -71,33 +71,23 @@
 .contact-info__icon-phone {
   @media (min-width: @tablet-width) {
     position: absolute;
-    top: 53px;
-    right: 59px;
+    top: 2px;
+    right: 19px;
     width: 59px;
-    height: 59px;
+    height: 58px;
     background-image: url("../img/contact_info_icon_phone.svg");
     background-repeat: no-repeat;
-  }
-
-  @media (min-width: @desktop-width) {
-    top: 48px;
-    left: 369px;
   }
 }
 
 .contact-info__icon-email {
   @media (min-width: @tablet-width) {
     position: absolute;
-    top: 184px;
-    right: 59px;
+    top: 2px;
+    right: 19px;
     width: 59px;
-    height: 59px;
+    height: 58px;
     background-image: url("../img/contact_info_icon_email.svg");
     background-repeat: no-repeat;
-  }
-
-  @media (min-width: @desktop-width) {
-    top: 48px;
-    right: 60px;
   }
 }
