@@ -6,10 +6,7 @@
     z-index: 2;
     box-sizing: border-box;
     width: 100%;
-    padding: 20px 110px 0 130px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    padding: 20px 10px 0 10px;
     background-color: rgba(0, 0, 0, 0.3);
   }
 }
@@ -26,6 +23,15 @@
     z-index: 2;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.3);
+  }
+}
+
+.page-header__wrapper {
+  @media (min-width: @desktop-width) {
+    max-width: 960px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
   }
 }
 
