@@ -1,5 +1,5 @@
 .popup {
-  display: none;
+  position: absolute;
   font-family: "Open Sans", "Arial Black", sans-serif;
   background-color: #ffffff;
   box-shadow: 0 10px 6px -4px rgba(0, 0, 0, 0.15);
@@ -48,18 +48,28 @@
 }
 
 .popup__success {
+  display: none;
   box-sizing: border-box;
   width: 320px;
   height: 365px;
+  top: 1895px;
+  left: 50%;
+  transform: translate(-50%);
 
   @media (min-width: @tablet-width) {
     width: 460px;
     height: 432px;
+    top: 1635px;
+    left: 50%;
+    transform: translate(-50%);
   }
 
   @media (min-width: @desktop-width) {
     width: 780px;
     height: 377px;
+    top: 1270px;
+    left: 50%;
+    transform: translate(-50%);
   }
 }
 
@@ -67,24 +77,24 @@
   padding: 40px 0 0 0;
 
   @media (min-width: @tablet-width) {
-    padding: 40px 100px 0 100px;
+    padding: 45px 100px 0 100px;
   }
 }
 
 .popup__description--success {
-  padding: 36px 32px 0 32px;
+  padding: 27px 28px 32px 27px;
 
   @media (min-width: @tablet-width) {
-    padding: 36px 72px 30px 72px;
+    padding: 20px 72px 30px 72px;
   }
 
   @media (min-width: @desktop-width) {
-    padding: 36px 165px 30px 165px;
+    padding: 25px 165px 35px 165px;
   }
 }
 
 .popup__button-wrapper--success {
-  padding: 60px 0 50px 0;
+  padding: 54px 0 50px 0;
   background-color: #f2f2f2;
 }
 
@@ -102,26 +112,38 @@
 }
 
 .popup__failure {
+  display: none;
   box-sizing: border-box;
   width: 320px;
   height: 295px;
+  top: 1422px;
+  left: 50%;
+  transform: translate(-50%);
 
   @media (min-width: @tablet-width) {
     width: 460px;
     height: 363px;
+    top: 1160px;
+    left: 50%;
+    transform: translate(-50%);
   }
 
   @media (min-width: @desktop-width) {
     width: 780px;
     height: 377px;
+    top: 820px;
   }
 }
 
 .popup__title--failure {
-  padding: 50px 0 0 0;
+  padding: 40px 0 0 0;
 
   @media (min-width: @tablet-width) {
-    padding: 50px 100px 0 100px;
+    padding: 45px 100px 0 100px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 40px 100px 0 100px;
   }
 }
 
@@ -129,24 +151,24 @@
   padding: 25px 20px 0 20px;
 
   @media (min-width: @tablet-width) {
-    padding: 25px 80px 0 80px;
+    padding: 20px 80px 0 80px;
   }
 
   @media (min-width: @desktop-width) {
-    padding: 25px 200px 60px 200px;
+    padding: 20px 200px 60px 200px;
   }
 }
 
 .popup__button-wrapper--failure {
-  padding: 40px 0 40px 0;
+  padding: 43px 0 43px 0;
 
   @media (min-width: @tablet-width) {
-    padding: 30px 0 30px 0;
+    padding: 35px 0 35px 0;
   }
 
   @media (min-width: @desktop-width) {
     background-color: #f2f2f2;
-    padding: 50px 0 50px 0;
+    padding: 55px 0 58px 0;
   }
 }
 
