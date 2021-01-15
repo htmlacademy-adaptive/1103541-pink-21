@@ -13,12 +13,18 @@
   }
 
   @media (min-width: @desktop-width) {
-    padding: 30px 0 30px 20px;
+    padding: 32px 0 30px 0;
+    justify-content: flex-start;
   }
 }
 
 .social-contacts__item {
   margin-right: 10px;
+
+  @media (min-width: @desktop-width) {
+    margin-right: 0;
+    margin-left: 5px;
+  }
 }
 
 .social-contacts__link {

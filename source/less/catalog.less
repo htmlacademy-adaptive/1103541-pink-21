@@ -1,3 +1,10 @@
+.catalog__wrapper {
+  @media (min-width: @desktop-width) {
+    max-width: 960px;
+    margin: 0 auto;
+  }
+}
+
 .catalog__discription {
   margin: 0;
   padding: 45px 35px 50px 35px;
@@ -14,53 +21,36 @@
   }
 
   @media (min-width: @desktop-width) {
-    padding: 90px 293px 40px 292px;
+    padding: 90px 170px 40px 170px;
     min-height: 240px;
   }
 }
 
 .catalog__list {
   margin: 0;
-  padding: 0 20px;
+  padding: 0;
   list-style: none;
   display: flex;
   flex-wrap: wrap;
 
-  @media (min-width: @tablet-width) {
-    padding: 0 20px;
-  }
-
   @media (min-width: @desktop-width) {
-    max-width: 1200px;
+    max-width: 960px;
     margin: 0 auto;
-    padding: 0;
   }
 }
 
 .catalog__item {
-  margin: 22px 0 0 0;
-  background-color: #f2f2f2;
+  margin: 22px 20px 0 20px;
 
   @media (min-width: @tablet-width) {
-    width: 48%;
-    margin: 0 0 21px 21px;
+    width: 45%;
+    margin: 24px 0 0 21px;
+    background-color: #ffffff;
   }
 
   @media (min-width: @desktop-width) {
     width: 300px;
-    margin: 0 20px 56px 0;
-  }
-}
-
-.catalog__item:nth-child(2n) {
-  @media (min-width: @tablet-width) {
-    margin-left: 0;
-  }
-}
-
-.catalog__item:nth-child(3n+2) {
-  @media (min-width: @desktop-width) {
-    margin-left: 130px;
+    margin: 0 10px 56px 10px;
   }
 }
 
@@ -68,12 +58,13 @@
   width: 100%;
   margin: 0;
   position: relative;
+  background-color: #ffffff;
 
   &::before {
     content: "панорама дня";
     position: absolute;
     z-index: 1;
-    left: 138px;
+    left: 160px;
     top: 0;
     color: #ffffff;
     background-color: #d22856;
@@ -84,16 +75,16 @@
 
     @media (min-width: @tablet-width) {
       top: 56px;
-      left: 77%;
+      left: 500px;
     }
 
     @media (min-width: @desktop-width) {
-      right: 135px;
+      left: 810px;
     }
   }
 
   @media (min-width: @tablet-width) {
-    margin-bottom: 51px;
+    margin: 0 0 30px 0;
   }
 
   @media (min-width: @desktop-width) {
@@ -106,15 +97,16 @@
 
 .catalog__image {
   display: block;
+  width: 100%;
 }
 
 .catalog__image--dayfoto {
   display: block;
   position: relative;
-  left: -20px;
 
   @media (min-width: @desktop-width) {
     width: 100%;
+    min-height: 505px;
     left: 0;
   }
 }
@@ -122,6 +114,7 @@
 .catalog__post {
   margin: 0;
   padding: 18px 0 13px 18px;
+  background-color: #f2f2f2;
 
   @media (min-width: @tablet-width) {
     box-sizing: border-box;
@@ -136,6 +129,9 @@
 }
 
 .catalog__post--dayfoto {
+  background-color: #f2f2f2;
+  margin: 0 20px;
+
   @media (min-width: @tablet-width) {
     min-height: 117px;
     padding: 20px 30px 0 30px;
@@ -144,8 +140,7 @@
   @media (min-width: @desktop-width) {
     padding: 24px 30px 0 28px;
     min-height: 95px;
-    background-color: #f2f2f2;
-    margin: 0 130px 0 130px;
+    margin: 0 10px 0 10px;
   }
 }
 
@@ -168,6 +163,10 @@
   font-weight: 300;
   text-transform: uppercase;
   color: #283645;
+
+  @media (min-width: @tablet-width) {
+    margin-left: 3px;
+  }
 }
 
 .catalog__post-description {
@@ -183,6 +182,7 @@
   font-size: 12px;
   text-transform: uppercase;
   color: #d22856;
+  background-color: #f2f2f2;
   background-image: url("../img/icons/icon_heart.svg");
   background-repeat: no-repeat;
   background-position: 16px 2px;
@@ -199,15 +199,18 @@
 }
 
 .catalog__post-like--dayfoto {
+  margin: 0 20px;
+
   @media (min-width: @tablet-width) {
+    margin: 0;
     position: absolute;
     padding: 0 60px 0 0;
     top: 535px;
-    right: 0;
-    background-position: 102px 2px;
+    right: 20px;
+    background-position: 105px 2px;
   }
 
   @media (min-width: @desktop-width) {
-    right: 128px;
+    right: 10px;
   }
 }

@@ -1,6 +1,7 @@
 .coopyrite {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   align-items: center;
   padding-top: 5px;
 
@@ -11,7 +12,6 @@
 
 .coopyrite__text {
   margin: 0;
-
   font-size: 14px;
   line-height: 18px;
   color: #283645;
@@ -23,9 +23,19 @@
 
 .coopyrite__link {
   display: block;
-  margin-left: 20px;
-  padding-top: 5px;
+  margin-left: 18px;
+  padding-top: 4px;
   fill: #d22856;
+
+  @media (min-width: @tablet-width) {
+    margin-left: 15px;
+    padding-top: 7px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 15px;
+    padding-top: 9px;
+  }
 
   &:hover,
   &:focus {

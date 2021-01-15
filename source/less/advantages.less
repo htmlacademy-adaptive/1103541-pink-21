@@ -8,17 +8,21 @@
 
   @media (min-width: @tablet-width) {
     min-height: 683px;
-    padding: 43px 0 0 0;
+    padding: 44px 0 0 0;
   }
 
   @media (min-width: @desktop-width) {
-    min-height: 870px;
+    min-height: 800px;
     padding: 60px 0 0 0;
   }
 }
 
 .advantages__text-wrapper {
   @media (min-width: @tablet-width) {
+    padding-bottom: 25px;
+  }
+
+  @media (min-width: @desktop-width) {
     padding-bottom: 40px;
   }
 }
@@ -54,19 +58,17 @@
   }
 
   @media (min-width: @desktop-width) {
-    padding-top: 30px;
-    min-height: 615px;
-    background-color: #ffffff;
+    position: relative;
 
     &::before {
       content: "";
       position: absolute;
       width: 100%;
-      min-height: 585px;
-      background-color: #f2f2f2;
-      top: 60px;
+      height: 100px;
+      background-color: #ffffff;
+      top: 0;
       left: 0;
-      clip-path: polygon(0% 10%, 100% 10%, 100% 100%, 0% 100%);
+      clip-path: polygon(0% 0%, 100% 0%, 100% 20%, 0% 100%);
     }
   }
 }
@@ -81,12 +83,13 @@
     width: 50%;
     margin-top: 0;
     margin-left: auto;
+    padding: 20px 0 45px 0;
   }
 
   @media (min-width: @desktop-width) {
     position: relative;
     width: 100%;
-    max-width: 940px;
+    max-width: 960px;
     margin: 0 auto;
     display: flex;
     flex-direction: row;
@@ -103,12 +106,11 @@
   text-align: center;
 
   @media (min-width: @tablet-width) {
-    margin-top: 33px;
+    margin-bottom: 36px;
   }
 
   @media (min-width: @desktop-width) {
-    width: 33%;
-    margin-top: 0;
+    width: 32%;
     margin-bottom: 0;
     flex-direction: column-reverse;
   }
@@ -128,13 +130,14 @@
 
   @media (min-width: @tablet-width) {
     text-align: left;
+    padding: 0 0 10px 0;
   }
 
   @media (min-width: @desktop-width) {
     font-size: 30px;
     line-height: 30px;
     text-align: center;
-    padding: 50px 35px 0 35px;
+    padding: 52px 40px 0 40px;
     position: relative;
     z-index: 1;
   }
@@ -150,12 +153,11 @@
 
   @media (min-width: @tablet-width) {
     text-align: left;
-    padding: 14px 0 0 0;
+    padding: 0;
   }
 
   @media (min-width: @desktop-width) {
-    padding: 25px 35px;
-
+    padding: 22px 30px;
     font-size: 18px;
     line-height: 30px;
     text-align: center;
@@ -167,7 +169,6 @@
 
   @media (min-width: @desktop-width) {
     display: block;
-    position: relative;
   }
 }
 
@@ -176,7 +177,6 @@
 
   @media (min-width: @desktop-width) {
     display: block;
-    position: relative;
   }
 }
 
@@ -192,7 +192,12 @@
 
   @media (min-width: @desktop-width) {
     margin: 0;
-    position: relative;
     left: 0;
+  }
+}
+
+.advantages__item-image {
+  @media (min-width: @desktop-width) {
+    position: relative;
   }
 }
