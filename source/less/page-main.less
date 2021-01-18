@@ -33,7 +33,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    min-height: 394;
+    min-height: 394px;
     padding: 170px 10px 88px 10px;
     background-image: url("../img/page_main_background_desktop.png");
     background-position: 0 0;
@@ -41,5 +41,12 @@
     @media (min-resolution: 2dppx) {
       background-image: url("../img/page_main_background_desktop@2x.png");
     }
+  }
+}
+
+.page-main__title-wrapper {
+  @media (min-width: @desktop-width) {
+    max-width: 960px;
+    margin: 0 auto;
   }
 }
