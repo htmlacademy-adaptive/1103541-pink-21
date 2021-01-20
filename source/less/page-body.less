@@ -1,0 +1,11 @@
+.page-body {
+  min-width: 320px;
+  min-height: 100%;
+  margin: 0 auto;
+  font-family: "Open Sans", "Arial Black", sans-serif;
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-rows: min-content 1fr min-content;
+  }
+}

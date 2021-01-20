@@ -1,10 +1,3 @@
-.catalog__wrapper {
-  @media (min-width: @desktop-width) {
-    max-width: 960px;
-    margin: 0 auto;
-  }
-}
-
 .catalog__discription {
   margin: 0;
   padding: 45px 35px 50px 35px;
@@ -21,8 +14,10 @@
   }
 
   @media (min-width: @desktop-width) {
-    padding: 90px 170px 40px 170px;
-    min-height: 240px;
+    max-width: 940px;
+    margin: 0 auto;
+    padding: 90px 170px 0 170px;
+    min-height: 238px;
   }
 }
 
@@ -35,22 +30,24 @@
 
   @media (min-width: @desktop-width) {
     max-width: 960px;
-    margin: 0 auto;
+    margin: 0 auto 50px auto;
   }
 }
 
 .catalog__item {
   margin: 22px 20px 0 20px;
+  width: 100%;
 
   @media (min-width: @tablet-width) {
     width: 45%;
+    min-height: 100px;
     margin: 24px 0 0 21px;
-    background-color: #ffffff;
+    background-color: #f2f2f2;
   }
 
   @media (min-width: @desktop-width) {
     width: 300px;
-    margin: 0 10px 56px 10px;
+    margin: 52px 10px 5px 10px;
   }
 }
 
@@ -64,7 +61,7 @@
     content: "панорама дня";
     position: absolute;
     z-index: 1;
-    left: 160px;
+    right: 6%;
     top: 0;
     color: #ffffff;
     background-color: #d22856;
@@ -75,11 +72,11 @@
 
     @media (min-width: @tablet-width) {
       top: 56px;
-      left: 500px;
+      right: 3%;
     }
 
     @media (min-width: @desktop-width) {
-      left: 810px;
+      right: 1%;
     }
   }
 
@@ -88,9 +85,8 @@
   }
 
   @media (min-width: @desktop-width) {
-    width: 100%;
-    margin-bottom: 52px;
-    margin-right: 0;
+    max-width: 1200px;
+    margin: 0 auto 0 auto;
     background-color: #ffffff;
   }
 }
@@ -102,12 +98,12 @@
 
 .catalog__image--dayfoto {
   display: block;
-  position: relative;
+
 
   @media (min-width: @desktop-width) {
-    width: 100%;
+    max-width: 1200px;
     min-height: 505px;
-    left: 0;
+    margin: 0 auto;
   }
 }
 
@@ -128,9 +124,19 @@
   }
 }
 
+.catalog__post-wrapper-dayfoto {
+  position: relative;
+
+  @media (min-width: @desktop-width) {
+    max-width: 960px;
+    margin: 0 auto;
+  }
+}
+
 .catalog__post--dayfoto {
   background-color: #f2f2f2;
   margin: 0 20px;
+  padding: 18px 10px 13px 16px;
 
   @media (min-width: @tablet-width) {
     min-height: 117px;
@@ -205,12 +211,13 @@
     margin: 0;
     position: absolute;
     padding: 0 60px 0 0;
-    top: 535px;
+    bottom: 75px;
     right: 20px;
     background-position: 105px 2px;
   }
 
   @media (min-width: @desktop-width) {
     right: 10px;
+    bottom: 51px;
   }
 }
