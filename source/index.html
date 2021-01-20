@@ -5,10 +5,12 @@
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
     <link rel="stylesheet" href="css/style.min.css">
-    <link rel="preload" href="/fonts/opensans.woff" as="font">
+    <link rel="preload" href="/fonts/opensans.woff2" as="font">
+    <link rel="preload" href="/fonts/opensansbold.woff2" as="font">
+    <link rel="preload" href="/fonts/opensanslight.woff2" as="font">
   </head>
-  <body class="page__body">
-    <header class="page-header page-header--nav-opened">
+  <body class="page-body">
+    <header class="page-header page-header--nav-opened"><!--При закрытом меню класс page-header--nav-opened меняется на класс page-header-nav-closed-->
       <div class="page-header__wrapper">
         <div class="page-header__logo">
           <a href="">
@@ -35,7 +37,7 @@
             </svg>
           </a>
         </div>
-        <nav class="main-navigation main-navigation--nojs">
+        <nav class="main-navigation main-navigation--nojs"><!--При закрытом меню меняется на класс main-navigation--closed, при открытом меню класс: main-navigation--opened-->
           <button class="main-navigation__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
           <ul class="main-navigation__list">
             <li class="main-navigation__item">
@@ -56,7 +58,7 @@
     </header>
     <main class="page-main">
       <h1 class="visually-hidden">Pink-приложения для редактирования фото</h1>
-      <section class="download">
+      <section class="download"><!--При закрытом меню добавляется класс download--nav-closed-->
         <h2 class="visually-hidden">Где можно скачать приложение</h2>
         <div class="download__wrapper">
           <div class="download__info-wrapper">
@@ -70,17 +72,17 @@
               <img class="download__image" src="img/download_hand_mobile.png" srcset="img/download_hand_mobile@2x.png 2x" alt="Рука с телефоном, на котором открыто приложение pink">
             </picture>
             <div class="download__button-wrapper">
-              <a href="#" download>Скачать приложение</a>
+              <a href="https://www.apple.com/ru/app-store/" download>Скачать приложение</a>
             </div>
             <ul class="download__list">
               <li class="download__item">
-                <a class="download__link--iphone" href="#" aria-label="значок apple"></a>
+                <a class="download__link-iphone" href="https://www.apple.com/ru/app-store/" aria-label="значок apple"></a>
               </li>
               <li class="download__item">
-                <a class="download__link--android" href="#" aria-label="значок android"></a>
+                <a class="download__link-android" href="https://play.google.com/store?hl=ru&gl=US" aria-label="значок android"></a>
               </li>
               <li class="download__item">
-                <a class="download__link--windows" href="#" aria-label="значок microsoft"></a>
+                <a class="download__link-windows" href="https://www.microsoft.com/ru-tm/store/b/home" aria-label="значок microsoft"></a>
               </li>
             </ul>
             <p class="download__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
@@ -109,7 +111,7 @@
                 <li class="advantages__item">
                   <div class="advantages__item-wrapper">
                     <h3 class="advantages__item-title">Меняет мир вокруг</h3>
-                    <p class="advantages__item-description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+                    <p class="advantages__item-description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы <span class="gap gap__advantages-item"></span> усилить эффект</p>
                     </div>
                   <picture>
                     <source type="image/webp" srcset="img/advantages_phone_screen2_desktop.webp 1x, img/advantages_phone_screen2_desktop@2x.webp 2x">
@@ -138,8 +140,8 @@
       <article class="article">
         <div class="article__section-wrapper">
           <div class="article__wrapper">
-            <h2 class="article__title">Эффект на 24 часа!</h2>
-            <p class="article__description">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
+            <h2 class="article__title">Эффект<span class="gap gap__article-title"></span> на 24 часа!</h2>
+            <p class="article__description">Британские ученые провели исследования и доказали,<span class="gap gap__article-description1"></span>что положительный эффект <span class="gap gap__article-description2"></span> от использования приложения длится целые сутки!</p>
             <p><a class="article__link" href="#">Узнать больше об исследовании</a></p>
           </div>
         </div>
@@ -172,12 +174,12 @@
               </div>
               <p class="review__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
             </blockquote>
-            <button class="reviews__prev button-arrows" type="button">
+            <button class="review__prev button-arrows" type="button">
               <svg width="22" height="41" viewBox="0 0 22 41" aria-label="Перейти на предыдущий отзыв">
                 <use xlink:href="img/icons/sprite_auto.svg#icon_arrow_left"></use>
               </svg>
             </button>
-            <button class="reviews__next button-arrows" type="button">
+            <button class="review__next button-arrows" type="button">
               <svg width="22" height="41" viewBox="0 0 22 41" aria-label="Перейти на следующий отзыв">
                 <use xlink:href="img/icons/sprite_auto.svg#icon_arrow_right"></use>
               </svg>
@@ -217,19 +219,19 @@
                 </td>
                 <td class="price__option-item">
                   <p class="price__option-text price__option-text--mobile">Розовый фильтр
-                    <span class="price__option-checkmark--mobile"></span>
+                    <span class="price__option-checkmark price__option-checkmark--mobile"></span>
                   </p>
                   <span class="price__option-checkmark"></span>
                 </td>
                 <td class="price__option-item">
                   <p class="price__option-text price__option-text--mobile">Розовый фильтр
-                    <span class="price__option-checkmark--mobile"></span>
+                    <span class="price__option-checkmark price__option-checkmark--mobile"></span>
                   </p>
                   <span class="price__option-checkmark"></span>
                 </td>
                 <td class="price__option-item">
                   <p class="price__option-text price__option-text--mobile">Розовый фильтр
-                    <span class="price__option-checkmark--mobile"></span>
+                    <span class="price__option-checkmark price__option-checkmark--mobile"></span>
                   </p>
                   <span class="price__option-checkmark"></span>
                 </td>
@@ -240,21 +242,21 @@
                 </td>
                 <td class="price__option-item">
                   <p class="price__option-text price__option-text--mobile">Смайлики
-                    <span class="price__option-cross--mobile"></span>
+                    <span class="price__option-cross price__option-cross--mobile"></span>
                   </p>
                   <span class="price__option-cross"></span>
                 </td>
                 <td class="price__option-item">
                   <p class="price__option-text price__option-text--mobile">Смайлики
-                    <span class="price__option-checkmark--mobile"></span>
+                    <span class="price__option-checkmark price__option-checkmark--mobile"></span>
                   </p>
                   <span class="price__option-checkmark"></span>
                 </td>
                 <td class="price__option-item">
                   <p class="price__option-text price__option-text--mobile">Смайлики
-                    <span class="price__option-checkmark--mobile"></span>
+                    <span class="price__option-checkmark price__option-checkmark--mobile"></span>
                   </p>
-                  <span class="price__option-checkmark"></span>
+                  <span class="price__option-checkmark price__option-checkmark"></span>
                 </td>
               </tr>
               <tr class="price__option">
@@ -263,19 +265,19 @@
                 </td>
                 <td class="price__option-item">
                   <p class="price__option-text price__option-text--mobile">Комментарии
-                    <span class="price__option-cross--mobile"></span>
+                    <span class="price__option-cross price__option-cross--mobile"></span>
                   </p>
                   <span class="price__option-cross"></span>
                 </td>
                 <td class="price__option-item">
                   <p class="price__option-text price__option-text--mobile">Комментарии
-                    <span class="price__option-cross--mobile"></span>
+                    <span class="price__option-cross price__option-cross--mobile"></span>
                   </p>
                   <span class="price__option-cross"></span>
                 </td>
                 <td class="price__option-item">
                   <p class="price__option-text price__option-text--mobile">Комментарии
-                    <span class="price__option-checkmark--mobile"></span>
+                    <span class="price__option-checkmark price__option-checkmark--mobile"></span>
                   </p>
                   <span class="price__option-checkmark"></span>
                 </td>
@@ -325,7 +327,7 @@
       <div class="page-footer__wrapper">
         <div class="page-footer__logo">
           <a class="logo logo--footer" href="#">
-            <svg width="147" height="40" viewBox="0 0 147 40" role="img" aria-label="Логотип Пинк" xmlns="http://www.w3.org/2000/svg">
+          <svg width="147" height="40" viewBox="0 0 147 40" role="img" aria-label="Логотип Пинк" xmlns="http://www.w3.org/2000/svg">
               <g class="logo__name">
                 <path d="M72.1933 18.4249C72.1932 18.0921 72.3255 17.7726 72.562 17.5345C72.7985 17.2965 73.1204 17.1589 73.4588 17.1511H80.6703C85.7826 17.1511 89.1473 19.827 89.1473 24.211V24.2703C89.1473 29.069 85.0695 31.5573 80.2484 31.5573H74.7544V38.2913C74.7702 38.466 74.7488 38.6421 74.6916 38.8082C74.6344 38.9743 74.5426 39.1269 74.4222 39.2563C74.3017 39.3856 74.1552 39.489 73.992 39.5596C73.8287 39.6303 73.6522 39.6668 73.4738 39.6668C73.2954 39.6668 73.119 39.6303 72.9557 39.5596C72.7925 39.489 72.6459 39.3856 72.5255 39.2563C72.405 39.1269 72.3133 38.9743 72.2561 38.8082C72.1989 38.6421 72.1775 38.466 72.1933 38.2913V18.4249ZM80.3489 29.2863C84.0952 29.2863 86.556 27.3115 86.556 24.3493V24.29C86.556 21.1106 84.1354 19.4616 80.5297 19.4616H74.8047V29.2468L80.3489 29.2863Z"/>
                 <path d="M94.0186 18.2669C94.0028 18.0922 94.0242 17.9162 94.0814 17.7501C94.1386 17.5839 94.2304 17.4313 94.3508 17.302C94.4713 17.1726 94.6178 17.0693 94.781 16.9986C94.9443 16.9279 95.1208 16.8914 95.2992 16.8914C95.4776 16.8914 95.654 16.9279 95.8173 16.9986C95.9806 17.0693 96.1271 17.1726 96.2475 17.302C96.368 17.4313 96.4597 17.5839 96.5169 17.7501C96.5741 17.9162 96.5955 18.0922 96.5798 18.2669V38.2913C96.5955 38.466 96.5741 38.642 96.5169 38.8082C96.4597 38.9743 96.368 39.1269 96.2475 39.2563C96.1271 39.3856 95.9806 39.489 95.8173 39.5596C95.654 39.6303 95.4776 39.6668 95.2992 39.6668C95.1208 39.6668 94.9443 39.6303 94.781 39.5596C94.6178 39.489 94.4713 39.3856 94.3508 39.2563C94.2304 39.1269 94.1386 38.9743 94.0814 38.8082C94.0242 38.642 94.0028 38.466 94.0186 38.2913V18.2669Z"/>
@@ -348,7 +350,7 @@
             </svg>
           </a>
         </div>
-        <ul class="social-contacts__list">
+        <ul class="social-contacts">
           <li class="social-contacts__item">
             <a class="social-contacts__link social-contacts__link--twitter" href="#" aria-label="значок твиттер">
               <svg width="18" height="14">
@@ -371,9 +373,9 @@
             </a>
           </li>
         </ul>
-        <div class="coopyrite">
-          <p class="coopyrite__text">Разработано</p>
-          <a class="coopyrite__link" href="https://htmlacademy.ru/intensive/adaptive">
+        <div class="copyrite">
+          <p class="copyrite__text">Разработано</p>
+          <a class="copyrite__link" href="https://htmlacademy.ru/intensive/adaptive">
             <svg width="27" height="34" aria-label="Логотип HTMLAcademy">
               <use xlink:href="img/icons/sprite_auto.svg#icon_logo_HTMLAcademy"></use>
             </svg>

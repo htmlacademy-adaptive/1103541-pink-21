@@ -1,0 +1,42 @@
+.gap {
+  display: block;
+  width: 10px;
+}
+
+.gap__article-title {
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
+
+.gap__article-description1 {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: block;
+  }
+}
+
+.gap__article-description2 {
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
+
+.gap__catalog-post {
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
+.gap__advantages-item {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}

@@ -19,12 +19,6 @@
   }
 }
 
-.contact-info .participant-form__fieldset-subtitle {
-  @media (min-width: @tablet-width) {
-    padding: 0 30px 0 30px;
-  }
-}
-
 .contact-info__item {
   @media (min-width: @tablet-width) {
     position: relative;
@@ -45,7 +39,7 @@
   margin-left: 25px;
 }
 
-.contact-info__item .input-text {
+.contact-info__input {
   margin: 5px 0 19px 0;
   width: 89%;
 
@@ -65,6 +59,14 @@
 
   @media (min-width: @tablet-width) {
     display: block;
+    position: relative;
+    right: 15px;
+    padding: 0 25px 0 35px;
+  }
+
+  @media (min-width: @desktop-width) {
+    right: 0;
+    padding: 0 30px;
   }
 }
 
