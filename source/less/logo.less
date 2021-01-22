@@ -1,4 +1,4 @@
-.logo {
+.logo__header {
   fill: #ffffff;
 
   &:hover,
@@ -12,8 +12,13 @@
   }
 }
 
-.logo--footer {
+.logo__footer {
   fill: #283645;
+
+  &:hover,
+  &:focus {
+    fill: #d22856;
+  }
 
   &:active {
     fill: #283645;
@@ -21,28 +26,25 @@
   }
 }
 
-.logo__glasses--footer {
-  fill: #d22856;
-
-  &:active {
-    fill: #d22856;
-    opacity: 0.3;
+.logo__mobile {
+  @media (min-width: @tablet-width) {
+    display: none;
   }
 }
 
-.logo__glasses-no-stars {
+.logo__tablet {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
+
   @media (min-width: @desktop-width) {
     display: none;
   }
 }
 
-.logo__glasses-no-stars--header {
-  @media (max-width: @mobile-width-only) {
-    display: none;
-  }
-}
-
-.logo__glasses-stars {
+.logo__desktop {
   display: none;
 
   @media (min-width: @desktop-width) {
@@ -50,11 +52,8 @@
   }
 }
 
-.logo__stars {
-  display: none;
-  fill: #d22856;
-
+.logo__mobile-footer {
   @media (min-width: @desktop-width) {
-    display: block;
+    display: none;
   }
 }
